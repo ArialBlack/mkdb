@@ -77,55 +77,33 @@
 ?>
 
 <!--(bake parts/header.php)-->
- 
-<div class="page-banner">
-  <div class="inner container">
-  </div>
-</div>
 
-<?php if (!empty($page['precontent'])): ?>
-  <div class="precontent"><?php print render($page['precontent']); ?></div>
-<?php endif; ?>
-
-<div class="main-container <?php print $container_class; ?>">
-  <div class="row">
-    <?php if (!empty($page['sidebar_first'])): ?>
-      <aside class="col-sm-4" role="complementary">
-        <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
-    <?php endif; ?>
-
-    <section<?php print $content_column_class; ?>>
-      <?php if (!empty($page['highlighted'])): ?>
-        <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-      <?php endif; ?>
-      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+<div class="main-container container-full">
+    <section>
       <a id="main-content"></a>
+
       <?php print render($title_prefix); ?>
       <?php if (!empty($title)): ?>
         <h1 class="page-header"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
+
       <?php print $messages; ?>
+
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>
       <?php endif; ?>
+
       <?php if (!empty($page['help'])): ?>
         <?php print render($page['help']); ?>
       <?php endif; ?>
+      
       <?php if (!empty($action_links)): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
+
       <?php print render($page['content']); ?>
     </section>
-
-    <?php if (!empty($page['sidebar_second'])): ?>
-      <aside class="col-sm-4" role="complementary">
-        <?php print render($page['sidebar_second']); ?>
-      </aside>  <!-- /#sidebar-second -->
-    <?php endif; ?>
-
-  </div>
 </div>
 
 <?php if (!empty($page['content_bottom'])): ?>

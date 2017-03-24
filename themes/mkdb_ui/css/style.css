@@ -7750,7 +7750,15 @@ button.close {
 .modal-header:before,
 .modal-header:after,
 .modal-footer:before,
-.modal-footer:after {
+.modal-footer:after,
+.webform-client-form-270 > div:before,
+.webform-client-form-270 > div:after,
+.page-node-270 .field-name-field-paragraphs > .field-items:before,
+.page-node-270 .field-name-field-paragraphs > .field-items:after,
+.entity-paragraphs-item:before,
+.entity-paragraphs-item:after,
+.entity-paragraphs-item.paragraphs-item-header-slider .field:before,
+.entity-paragraphs-item.paragraphs-item-header-slider .field:after {
   content: " ";
   display: table;
 }
@@ -7770,7 +7778,11 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-header:after,
-.modal-footer:after {
+.modal-footer:after,
+.webform-client-form-270 > div:after,
+.page-node-270 .field-name-field-paragraphs > .field-items:after,
+.entity-paragraphs-item:after,
+.entity-paragraphs-item.paragraphs-item-header-slider .field:after {
   clear: both;
 }
 /* line 12, ..\build-front\bower_components\bootstrap\less\utilities.less */
@@ -9032,6 +9044,13 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .dropdown-submenu > a:after {
   border-left-color: white;
 }
+/* line 56, ..\themes\mkdb_ui\less\_mixins.less */
+.fc {
+  max-width: none;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
 /* line 5, ..\themes\mkdb_ui\less\_base.less */
 #bpMArker {
   display: inline-block;
@@ -9186,6 +9205,15 @@ body,
 .node .translation_eng {
   display: none !important;
 }
+/* line 151, ..\themes\mkdb_ui\less\_base.less */
+h1 {
+  display: none;
+}
+/* line 15, ..\themes\mkdb_ui\less\_grid.less */
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
 /*
 *   CSS file with Bootstrap grid classes for screens bigger than 1600px. Just add this file after the Bootstrap CSS file and you will be able to juse col-xl, col-xl-push, hidden-xl, etc.
 *
@@ -9195,12 +9223,12 @@ body,
 *
 */
 @media (min-width: 1200px) and (max-width: 1400px - 1) {
-  /* line 26, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 31, ..\themes\mkdb_ui\less\_grid.less */
   .hidden-lg {
     display: none !important;
   }
 }
-/* line 32, ..\themes\mkdb_ui\less\_grid.less */
+/* line 37, ..\themes\mkdb_ui\less\_grid.less */
 .visible-xl-block,
 .visible-xl-inline,
 .visible-xl-inline-block,
@@ -9208,19 +9236,19 @@ body,
   display: none !important;
 }
 @media (max-width: 767px) {
-  /* line 40, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 45, ..\themes\mkdb_ui\less\_grid.less */
   .col-sm-12 {
     width: 100%;
   }
 }
 @media (min-width: 1400px) {
-  /* line 46, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 51, ..\themes\mkdb_ui\less\_grid.less */
   .container {
     width: 1370px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 52, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 57, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-1,
   .col-xl-2,
   .col-xl-3,
@@ -9235,243 +9263,354 @@ body,
   .col-xl-12 {
     float: left;
   }
-  /* line 56, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 61, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-12 {
     width: 100%;
   }
-  /* line 60, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 65, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-11 {
     width: 91.66666667%;
   }
-  /* line 64, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 69, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-10 {
     width: 83.33333333%;
   }
-  /* line 68, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 73, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-9 {
     width: 75%;
   }
-  /* line 72, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 77, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-8 {
     width: 66.66666667%;
   }
-  /* line 76, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 81, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-7 {
     width: 58.33333333%;
   }
-  /* line 80, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 85, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-6 {
     width: 50%;
   }
-  /* line 84, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 89, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-5 {
     width: 41.66666667%;
   }
-  /* line 88, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 93, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-4 {
     width: 33.33333333%;
   }
-  /* line 92, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 97, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-3 {
     width: 25%;
   }
-  /* line 96, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 101, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-2 {
     width: 16.66666667%;
   }
-  /* line 100, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 105, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-1 {
     width: 8.33333333%;
   }
-  /* line 104, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 109, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-12 {
     right: 100%;
   }
-  /* line 108, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 113, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-11 {
     right: 91.66666667%;
   }
-  /* line 112, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 117, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-10 {
     right: 83.33333333%;
   }
-  /* line 116, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 121, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-9 {
     right: 75%;
   }
-  /* line 120, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 125, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-8 {
     right: 66.66666667%;
   }
-  /* line 124, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 129, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-7 {
     right: 58.33333333%;
   }
-  /* line 128, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 133, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-6 {
     right: 50%;
   }
-  /* line 132, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 137, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-5 {
     right: 41.66666667%;
   }
-  /* line 136, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 141, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-4 {
     right: 33.33333333%;
   }
-  /* line 140, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 145, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-3 {
     right: 25%;
   }
-  /* line 144, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 149, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-2 {
     right: 16.66666667%;
   }
-  /* line 148, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 153, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-1 {
     right: 8.33333333%;
   }
-  /* line 152, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 157, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-0 {
     right: auto;
   }
-  /* line 156, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 161, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-12 {
     left: 100%;
   }
-  /* line 160, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 165, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-11 {
     left: 91.66666667%;
   }
-  /* line 164, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 169, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-10 {
     left: 83.33333333%;
   }
-  /* line 168, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 173, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-9 {
     left: 75%;
   }
-  /* line 172, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 177, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-8 {
     left: 66.66666667%;
   }
-  /* line 176, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 181, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-7 {
     left: 58.33333333%;
   }
-  /* line 180, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 185, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-6 {
     left: 50%;
   }
-  /* line 184, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 189, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-5 {
     left: 41.66666667%;
   }
-  /* line 188, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 193, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-4 {
     left: 33.33333333%;
   }
-  /* line 192, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 197, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-3 {
     left: 25%;
   }
-  /* line 196, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 201, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-2 {
     left: 16.66666667%;
   }
-  /* line 200, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 205, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-1 {
     left: 8.33333333%;
   }
-  /* line 204, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 209, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-0 {
     left: auto;
   }
-  /* line 208, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 213, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-12 {
     margin-left: 100%;
   }
-  /* line 212, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 217, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-11 {
     margin-left: 91.66666667%;
   }
-  /* line 216, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 221, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-10 {
     margin-left: 83.33333333%;
   }
-  /* line 220, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 225, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-9 {
     margin-left: 75%;
   }
-  /* line 224, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 229, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-8 {
     margin-left: 66.66666667%;
   }
-  /* line 228, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 233, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-7 {
     margin-left: 58.33333333%;
   }
-  /* line 232, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 237, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-6 {
     margin-left: 50%;
   }
-  /* line 236, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 241, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-5 {
     margin-left: 41.66666667%;
   }
-  /* line 240, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 245, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-4 {
     margin-left: 33.33333333%;
   }
-  /* line 244, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 249, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-3 {
     margin-left: 25%;
   }
-  /* line 248, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 253, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-2 {
     margin-left: 16.66666667%;
   }
-  /* line 252, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 257, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-1 {
     margin-left: 8.33333333%;
   }
-  /* line 256, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 261, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-0 {
     margin-left: 0;
   }
-  /* line 260, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 265, ..\themes\mkdb_ui\less\_grid.less */
   .visible-xl {
     display: block !important;
   }
-  /* line 264, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 269, ..\themes\mkdb_ui\less\_grid.less */
   table.visible-xl {
     display: table;
   }
-  /* line 268, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 273, ..\themes\mkdb_ui\less\_grid.less */
   tr.visible-xl {
     display: table-row !important;
   }
-  /* line 272, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 277, ..\themes\mkdb_ui\less\_grid.less */
   th.visible-xl,
   td.visible-xl {
     display: table-cell !important;
   }
-  /* line 276, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 281, ..\themes\mkdb_ui\less\_grid.less */
   .visible-xl-block {
     display: block !important;
   }
-  /* line 280, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 285, ..\themes\mkdb_ui\less\_grid.less */
   .visible-xl-inline {
     display: inline !important;
   }
-  /* line 284, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 289, ..\themes\mkdb_ui\less\_grid.less */
   .visible-xl-inline-block {
     display: inline-block !important;
   }
-  /* line 288, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 293, ..\themes\mkdb_ui\less\_grid.less */
   .hidden-xl {
     display: none !important;
   }
+}
+/* line 1, ..\themes\mkdb_ui\less\parts\blocks.less */
+.webform-client-form-270 {
+  background: gray;
+}
+/* line 4, ..\themes\mkdb_ui\less\parts\blocks.less */
+.webform-client-form-270 > div {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  /* line 13, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .webform-client-form-270 > div {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 16, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .webform-client-form-270 > div {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 19, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .webform-client-form-270 > div {
+    width: 1170px;
+  }
+}
+/* line 108, ..\build-front\bower_components\bootstrap\less\navbar.less */
+.webform-client-form-270 > div > .navbar-header,
+.webform-client-form-270 > div > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 1200px) {
+  /* line 113, ..\build-front\bower_components\bootstrap\less\navbar.less */
+  .webform-client-form-270 > div > .navbar-header,
+  .webform-client-form-270 > div > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1400px) {
+  /* line 49, ..\themes\mkdb_ui\less\_mixins.less */
+  .webform-client-form-270 > div {
+    width: 1370px;
+  }
+}
+/* line 2, ..\themes\mkdb_ui\less\parts\contacts.less */
+.page-node-270 .field-name-field-paragraphs > .field-items {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  /* line 13, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .page-node-270 .field-name-field-paragraphs > .field-items {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 16, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .page-node-270 .field-name-field-paragraphs > .field-items {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 19, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .page-node-270 .field-name-field-paragraphs > .field-items {
+    width: 1170px;
+  }
+}
+/* line 108, ..\build-front\bower_components\bootstrap\less\navbar.less */
+.page-node-270 .field-name-field-paragraphs > .field-items > .navbar-header,
+.page-node-270 .field-name-field-paragraphs > .field-items > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 1200px) {
+  /* line 113, ..\build-front\bower_components\bootstrap\less\navbar.less */
+  .page-node-270 .field-name-field-paragraphs > .field-items > .navbar-header,
+  .page-node-270 .field-name-field-paragraphs > .field-items > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1400px) {
+  /* line 49, ..\themes\mkdb_ui\less\_mixins.less */
+  .page-node-270 .field-name-field-paragraphs > .field-items {
+    width: 1370px;
+  }
+}
+/* line 5, ..\themes\mkdb_ui\less\parts\contacts.less */
+.page-node-270 .field-name-field-paragraphs > .field-items > .field-item {
+  width: 50%;
+  float: left;
+}
+/* line 9, ..\themes\mkdb_ui\less\parts\contacts.less */
+.page-node-270 .field-name-field-paragraphs > .field-items > .field-item .field {
+  margin-right: 0;
+}
+/* line 13, ..\themes\mkdb_ui\less\parts\contacts.less */
+.page-node-270 .field-name-field-paragraphs > .field-items > .field-item .entity-paragraphs-item {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+  width: 100%;
+  max-width: none;
 }
 /* line 3, ..\themes\mkdb_ui\less\parts\carousel.less */
 #block-views-slider-portfolio-block-1 {
@@ -9694,4 +9833,133 @@ body,
     min-width: 90vw;
     height: auto;
   }
+}
+/* line 1, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.entity-paragraphs-item > .content {
+  position: relative;
+  display: table;
+  width: 100%;
+}
+/* line 7, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.entity-paragraphs-item {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: gray 1px solid;
+}
+@media (min-width: 768px) {
+  /* line 13, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .entity-paragraphs-item {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 16, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .entity-paragraphs-item {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 19, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .entity-paragraphs-item {
+    width: 1170px;
+  }
+}
+/* line 108, ..\build-front\bower_components\bootstrap\less\navbar.less */
+.entity-paragraphs-item > .navbar-header,
+.entity-paragraphs-item > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 1200px) {
+  /* line 113, ..\build-front\bower_components\bootstrap\less\navbar.less */
+  .entity-paragraphs-item > .navbar-header,
+  .entity-paragraphs-item > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1400px) {
+  /* line 49, ..\themes\mkdb_ui\less\_mixins.less */
+  .entity-paragraphs-item {
+    width: 1370px;
+  }
+}
+/* line 14, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.entity-paragraphs-item .field {
+  margin-right: 40%;
+}
+/* line 18, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.entity-paragraphs-item .carousel-container {
+  width: 40%;
+  margin-right: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 26, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.entity-paragraphs-item.paragraphs-item-header-slider {
+  max-width: none;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 100px;
+  padding-bottom: 0;
+  border: none;
+}
+/* line 29, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.entity-paragraphs-item.paragraphs-item-header-slider .field {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  /* line 13, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .entity-paragraphs-item.paragraphs-item-header-slider .field {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 16, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .entity-paragraphs-item.paragraphs-item-header-slider .field {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 19, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .entity-paragraphs-item.paragraphs-item-header-slider .field {
+    width: 1170px;
+  }
+}
+/* line 108, ..\build-front\bower_components\bootstrap\less\navbar.less */
+.entity-paragraphs-item.paragraphs-item-header-slider .field > .navbar-header,
+.entity-paragraphs-item.paragraphs-item-header-slider .field > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 1200px) {
+  /* line 113, ..\build-front\bower_components\bootstrap\less\navbar.less */
+  .entity-paragraphs-item.paragraphs-item-header-slider .field > .navbar-header,
+  .entity-paragraphs-item.paragraphs-item-header-slider .field > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1400px) {
+  /* line 49, ..\themes\mkdb_ui\less\_mixins.less */
+  .entity-paragraphs-item.paragraphs-item-header-slider .field {
+    width: 1370px;
+  }
+}
+/* line 33, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.entity-paragraphs-item.paragraphs-item-header-slider .field.field-name-field-step-photo {
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  position: static;
 }

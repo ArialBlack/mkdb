@@ -25,8 +25,7 @@ module.exports = function(grunt) {
 
                 files: {
                     // files go here, like so:
-                    "../themes/mkdb_ui/templates/page.tpl.php": "../themes/mkdb_ui/_templates-src/page.tpl.php",
-                    "../themes/mkdb_ui/templates/page--front.tpl.php": "../themes/mkdb_ui/_templates-src/page--front.tpl.php"
+                    "../themes/mkdb_ui/templates/page.tpl.php": "../themes/mkdb_ui/_templates-src/page.tpl.php"
                 }
             }
         },
