@@ -12,7 +12,7 @@ module.exports = function(grunt) {
                     dumpLineNumbers: 'comments'
                 },
                 files: {
-                    '../themesmkdb_ui/css/style.css': '../themes/mkdb_ui/less/style.less'
+                    '../themes/mkdb_ui/css/style.css': '../themes/mkdb_ui/less/style.less'
                 }
             }
         },
@@ -25,8 +25,6 @@ module.exports = function(grunt) {
 
                 files: {
                     // files go here, like so:
-                    "../themes/mkdb_ui/templates/page--type-photogallery.tpl.php": "../themes/mkdb_ui/_templates-src/page--type-photogallery.tpl.php",
-                    "../themes/mkdb_ui/templates/page--type-article.tpl.php": "../themes/mkdb_ui/_templates-src/page--type-article.tpl.php",
                     "../themes/mkdb_ui/templates/page.tpl.php": "../themes/mkdb_ui/_templates-src/page.tpl.php",
                     "../themes/mkdb_ui/templates/page--front.tpl.php": "../themes/mkdb_ui/_templates-src/page--front.tpl.php"
                 }
