@@ -1,0 +1,59 @@
+<?php
+
+/**
+* Implements hook_block_info().
+*/
+
+module_load_include('inc', 'mkdb', 'mkdb.adminmessages');
+
+function mkdb_menu(){
+    $items=array();
+
+    $items['admin/mkdb/labels'] = array(
+        'title' => 'mkdb admin labels',
+        'description' => 'Admin labels',
+        'type' => MENU_NORMAL_ITEM,
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array('mkdb_admin_labels_form'),
+        'access arguments' => array('access adminstration page'),
+        'access callback' => TRUE,
+    );
+
+    return $items;
+}
+
+
+
+
+
+function mkdb_form_alter(&$form, &$form_state, $form_id) {
+    if (isset($form['#node_edit_form']) &&  $form['#node_edit_form'] == TRUE && $form['nid']['#value'] == NULL) {
+        $actionstring = $form['#action'];
+        $pos = strpos($actionstring, 'translation=');
+        $len = strlen ($actionstring);
+        $tnid = intval(substr($actionstring, $pos+12, $len-$pos-12));
+
+        $source_node = node_load($tnid);
+
+
+        if ($source_node) {
+            $path = drupal_get_path_alias('node/' . $source_node->nid, $source_node->language);
+            dsm($path);
+
+            drupal_add_js(array('mkdb' => array('translatedPath' => $path)), array('type' => 'setting'));
+            drupal_add_js(drupal_get_path('module', 'mkdb') .'/script.js');
+
+            $form['#after_build'][] = 'mkdb_after_build';
+        }
+    }
+}
+
+function mkdb_after_build($form, &$form_state) {
+    $form['path']['pathauto'] = FALSE;
+    return ($form);
+}
+
+
+
+
+
