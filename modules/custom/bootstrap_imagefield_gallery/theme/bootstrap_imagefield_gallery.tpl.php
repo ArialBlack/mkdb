@@ -16,33 +16,32 @@
  * $slides - Array containing all slide images, its sanatized title & alt ready to print, its hash id and the full image URL if you need it
  * $thumbs - Array containing all thumbnail images ready to print and their hash
  * $settings - The settings for galleryformatter as configured for this field instance.
- 
 
- 
- 
+
+
+
+?>
+<div id="bootstrapimagefieldgallery_<?php print $gal_id; ?>" class="bootstrapimagefieldgallery carousel slide  data-ride="carousel" data-interval="false">
  
  */
 
 $gal_id = generateRandomString();
- 
+$sc = count($slides);
 ?>
-<div id="bootstrapimagefieldgallery_<?php print $gal_id; ?>" class="bootstrapimagefieldgallery carousel slide" data-ride="carousel" data-interval="false">
+<div class="carousel-container">
+<div id="bootstrapimagefieldgallery_<?php print $gal_id; ?>" class="bootstrapimagefieldgallery carousel slide scount-<?php print $sc; ?>"" data-ride="carousel" data-interval="false">
       <!-- Indicators -->
-      <ol class="carousel-indicators">
-       <?php foreach ($slides as $id => $data): ?>
-       	 <li data-target="#bootstrapimagefieldgallery" data-slide-to="<?php print $data['hash_id']; ?>" class=""></li>
+    <ol class="carousel-indicators">
+        <?php foreach ($slides as $id => $data): ?>
+           <?php if ($id == 0) $activeclass='active'; else $activeclass=''; ?>
+       	 <li data-target="#bootstrapimagefieldgallery" data-slide-to="<?php print $data['hash_id']; ?>" class="<?php print $activeclass; ?>"></li>
         <?php endforeach; ?>
        
       </ol>
       <div class="carousel-inner" role="listbox">
        
 	   <?php foreach ($slides as $id => $data): ?>
-       <?php 
-            
-            if ($id == 1) 
-                $activeclass='active';
-           else $activeclass='';   
-       ?>
+       <?php if ($id == 0) $activeclass='active'; else $activeclass=''; ?> 
 	    <div class="item <?php print $activeclass; ?>">
            <?php print $data['image']; ?>
           <?php if (!empty($data['title']) || !empty($data['alt'])): ?>
@@ -61,6 +60,7 @@ $gal_id = generateRandomString();
       <a class="left carousel-control" href="#bootstrapimagefieldgallery_<?php print $gal_id; ?>" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
       <a class="right carousel-control" href="#bootstrapimagefieldgallery_<?php print $gal_id; ?>" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
     </div>
+    </div>  
 
 
 

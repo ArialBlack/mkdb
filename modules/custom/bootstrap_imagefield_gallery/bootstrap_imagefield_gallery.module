@@ -25,6 +25,7 @@
   );
 }
 
+
 /**
  * Implements hook_field_formatter_settings_form().
  */
@@ -45,9 +46,14 @@ function bootstrap_imagefield_gallery_field_formatter_settings_form($field, $ins
     '#default_value' => $settings['slide_style'],
     '#description' => t('Select the imagecache style you would like to show when clicked on the thumbnail.'),
   );
+  
 
   return $form;
 }
+
+
+
+
 
 /**
  * Implements hook_field_formatter_settings_summary().
@@ -55,10 +61,17 @@ function bootstrap_imagefield_gallery_field_formatter_settings_form($field, $ins
 function bootstrap_imagefield_gallery_field_formatter_settings_summary($field, $instance, $view_mode) {
   $display = $instance['display'][$view_mode];
   $settings = $display['settings'];
+
   $summary[] = t('Slides style: @value', array('@value' => $settings['slide_style']));
+ 
+
   
   return implode ('<br />', $summary);
 }
+
+
+
+
 
 /**
  * Implements hook_field_formatter_view().
@@ -72,6 +85,7 @@ function bootstrap_imagefield_gallery_field_formatter_view($entity_type, $entity
   }
   $modulepath = drupal_get_path('module', 'bootstrap_imagefield_gallery');
   $settings = $display['settings'];
+
 
   // Media field support (only images)
   if ($field['type'] == 'media') {
@@ -190,9 +204,9 @@ function bootstrap_imagefield_gallery_field_formatter_view($entity_type, $entity
     );    
   }
 
-  if($num_of_images > 1){
-    drupal_add_js($modulepath . '/js/bootstrap_imagefield_gallery.js');
-  }
+  //if($num_of_images > 1){
+  //  drupal_add_js($modulepath . '/js/bootstrap_imagefield_gallery.js');
+  //}
 
 
   // prepare the variables for our theme function
@@ -205,6 +219,12 @@ function bootstrap_imagefield_gallery_field_formatter_view($entity_type, $entity
   return $element;
 }
 
+
+
+
+
+
+
 function bootstrap_imagefield_gallery_theme() {
   return array(
     'bootstrap_imagefield_gallery' => array(
@@ -213,6 +233,9 @@ function bootstrap_imagefield_gallery_theme() {
     )
   );
 }
+
+
+
 
 function bootstrap_imagefield_gallery_getimage_dimensions($stylename, $image_path) {
   $ret = NULL;

@@ -1,6 +1,7 @@
 (function ($) {
 Drupal.behaviors.bootstrap_imagefield_gallery = {
   attach: function (context, settings) {
+    
     $( ".bootstrapimagefieldgallery" ).each(function() {
         items = $(this, context);
         if (items.length) {
@@ -8,6 +9,10 @@ Drupal.behaviors.bootstrap_imagefield_gallery = {
 	        items.find('.carousel-indicators .li:first-child').addClass('active'); 
         }
     });
+
+   
+
+    
   }
 };
 })(jQuery);

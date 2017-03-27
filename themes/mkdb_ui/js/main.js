@@ -29,21 +29,13 @@
             });
         }
 
-        function move404() {
-            var $page = $('.page-node-261, .page-node-268, .page-node-263, .page-node-264'),
-                $h1 = $page.find('.page-banner .inner'),
-                $text = $page.find('#block-system-main p');
-            $text.appendTo($h1);
-        }
-
         $(document).ready(function() {
-            move404();
             $('.carousel').carousel();
-            buildMultyCarousel();
+            //buildMultyCarousel();
         });
 
         $(window).load(function() {
-            buildMasonry();
+           // buildMasonry();
         });
 
     }); // end of document ready
