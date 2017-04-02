@@ -5,6 +5,7 @@
  * these variables directly from ../bootstrap/less/variables.less to this file.
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&subset=cyrillic');
 @import 'https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css';
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css';
 /* line 9, ..\build-front\bower_components\bootstrap\less\normalize.less */
@@ -9054,7 +9055,19 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 5, ..\themes\mkdb_ui\less\_base.less */
+/*
+X * S / 1000 = P
+X is equal to the letter-tracking value in Photoshop
+S is the font-size in pixels
+P is the resulted value in "px" to use in CSS*/
+@font-face {
+  font-family: 'bebas_neue_regularregular';
+  src: url('../fonts/bebasneue_regular-webfont.eot');
+  src: url('../fonts/bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/bebasneue_regular-webfont.woff2') format('woff2'), url('../fonts/bebasneue_regular-webfont.woff') format('woff'), url('../fonts/bebasneue_regular-webfont.svg#bebas_neue_regularregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 17, ..\themes\mkdb_ui\less\_base.less */
 #bpMArker {
   display: inline-block;
   visibility: visible;
@@ -9062,52 +9075,53 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   width: 1px;
 }
 @media (min-width: 1200px) {
-  /* line 11, ..\themes\mkdb_ui\less\_base.less */
+  /* line 23, ..\themes\mkdb_ui\less\_base.less */
   #bpMArker {
     display: none;
     visibility: hidden;
   }
 }
 @media (min-width: 992px) {
-  /* line 19, ..\themes\mkdb_ui\less\_base.less */
+  /* line 31, ..\themes\mkdb_ui\less\_base.less */
   .not-front #bpMArker {
     display: none;
     visibility: hidden;
   }
 }
-/* line 26, ..\themes\mkdb_ui\less\_base.less */
+/* line 38, ..\themes\mkdb_ui\less\_base.less */
 html {
   height: 100%;
   font-size: 24px;
 }
-/* line 31, ..\themes\mkdb_ui\less\_base.less */
+/* line 43, ..\themes\mkdb_ui\less\_base.less */
 body {
   font-size: 10px;
   font-size: 1rem;
   line-height: 13.333333333333332px;
   line-height: 1.3333333333333333rem;
+  font-family: 'Rubik', sans-serif;
 }
 @media screen and (max-width: 768px) {
-  /* line 34, ..\themes\mkdb_ui\less\_base.less */
+  /* line 48, ..\themes\mkdb_ui\less\_base.less */
   body {
     width: 768px;
   }
-  /* line 35, ..\themes\mkdb_ui\less\_base.less */
+  /* line 49, ..\themes\mkdb_ui\less\_base.less */
   body * {
     max-width: 768px;
   }
-  /* line 39, ..\themes\mkdb_ui\less\_base.less */
+  /* line 54, ..\themes\mkdb_ui\less\_base.less */
   body .container {
     width: 768px;
   }
 }
 @media screen and (max-width: 1200px) {
-  /* line 44, ..\themes\mkdb_ui\less\_base.less */
+  /* line 59, ..\themes\mkdb_ui\less\_base.less */
   body {
     padding-top: 55px;
   }
 }
-/* line 49, ..\themes\mkdb_ui\less\_base.less */
+/* line 64, ..\themes\mkdb_ui\less\_base.less */
 h1,
 h2,
 h3,
@@ -9118,29 +9132,29 @@ h6 {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 54, ..\themes\mkdb_ui\less\_base.less */
+/* line 69, ..\themes\mkdb_ui\less\_base.less */
 a {
   transition: 0.3s all linear;
 }
-/* line 58, ..\themes\mkdb_ui\less\_base.less */
+/* line 73, ..\themes\mkdb_ui\less\_base.less */
 p {
   margin-bottom: 40px;
 }
-/* line 62, ..\themes\mkdb_ui\less\_base.less */
+/* line 77, ..\themes\mkdb_ui\less\_base.less */
 img {
   max-width: 100%;
   height: auto;
 }
-/* line 67, ..\themes\mkdb_ui\less\_base.less */
+/* line 82, ..\themes\mkdb_ui\less\_base.less */
 .translation_en,
 .translation_uk {
   display: none !important;
 }
-/* line 72, ..\themes\mkdb_ui\less\_base.less */
+/* line 87, ..\themes\mkdb_ui\less\_base.less */
 h1.page-header {
   border: none;
 }
-/* line 78, ..\themes\mkdb_ui\less\_base.less */
+/* line 93, ..\themes\mkdb_ui\less\_base.less */
 .pager.pager-load-more a {
   border: #231f20 1px solid;
   border-radius: 0;
@@ -9152,27 +9166,27 @@ h1.page-header {
   padding: 10px 35px;
   text-decoration: none;
 }
-/* line 84, ..\themes\mkdb_ui\less\_base.less */
+/* line 99, ..\themes\mkdb_ui\less\_base.less */
 .region-content ul.flippy {
   margin-top: 60px;
 }
-/* line 90, ..\themes\mkdb_ui\less\_base.less */
+/* line 105, ..\themes\mkdb_ui\less\_base.less */
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
 }
-/* line 94, ..\themes\mkdb_ui\less\_base.less */
+/* line 109, ..\themes\mkdb_ui\less\_base.less */
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   opacity: 0;
 }
-/* line 100, ..\themes\mkdb_ui\less\_base.less */
+/* line 115, ..\themes\mkdb_ui\less\_base.less */
 .carousel-fade .carousel-inner .active,
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1;
 }
-/* line 106, ..\themes\mkdb_ui\less\_base.less */
+/* line 121, ..\themes\mkdb_ui\less\_base.less */
 .carousel-fade .carousel-inner .next,
 .carousel-fade .carousel-inner .prev,
 .carousel-fade .carousel-inner .active.left,
@@ -9181,11 +9195,11 @@ h1.page-header {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
-/* line 115, ..\themes\mkdb_ui\less\_base.less */
+/* line 130, ..\themes\mkdb_ui\less\_base.less */
 .carousel-fade .carousel-control {
   z-index: 2;
 }
-/* line 120, ..\themes\mkdb_ui\less\_base.less */
+/* line 135, ..\themes\mkdb_ui\less\_base.less */
 html,
 body,
 .carousel,
@@ -9193,22 +9207,22 @@ body,
 .carousel-inner .item {
   height: 100%;
 }
-/* line 136, ..\themes\mkdb_ui\less\_base.less */
+/* line 151, ..\themes\mkdb_ui\less\_base.less */
 .views-field-created {
   font-size: 5.833333333333334px !important;
   font-size: 0.5833333333333334rem !important;
 }
-/* line 140, ..\themes\mkdb_ui\less\_base.less */
+/* line 155, ..\themes\mkdb_ui\less\_base.less */
 .submitted-by {
   font-size: 7.5px !important;
   font-size: 0.75rem !important;
 }
-/* line 145, ..\themes\mkdb_ui\less\_base.less */
+/* line 160, ..\themes\mkdb_ui\less\_base.less */
 .node .translation_ru,
 .node .translation_eng {
   display: none !important;
 }
-/* line 151, ..\themes\mkdb_ui\less\_base.less */
+/* line 166, ..\themes\mkdb_ui\less\_base.less */
 h1 {
   display: none;
 }
@@ -9520,32 +9534,50 @@ h1 {
 .navbar {
   background: none;
   border: none;
+  font-family: 'bebas_neue_regularregular';
 }
-/* line 19, ..\themes\mkdb_ui\less\parts\navbar.less */
+/* line 20, ..\themes\mkdb_ui\less\parts\navbar.less */
 .navbar .navbar-nav {
   float: right;
 }
-/* line 22, ..\themes\mkdb_ui\less\parts\navbar.less */
+/* line 23, ..\themes\mkdb_ui\less\parts\navbar.less */
 .navbar .navbar-nav > li > a {
   color: white;
 }
-/* line 26, ..\themes\mkdb_ui\less\parts\navbar.less */
+/* line 27, ..\themes\mkdb_ui\less\parts\navbar.less */
 .navbar .navbar-nav > .active > a,
 .navbar .navbar-nav > .active > a:hover,
 .navbar .navbar-nav > .active > a:focus {
   background: none;
 }
-/* line 35, ..\themes\mkdb_ui\less\parts\navbar.less */
+/* line 36, ..\themes\mkdb_ui\less\parts\navbar.less */
 .logo svg {
   width: 120px;
   height: 60px;
   fill: white;
 }
+/* line 1, ..\themes\mkdb_ui\less\parts\footer.less */
+.footer-container,
+.page-node-270 .header-container {
+  background: #1c1d1e;
+  position: static;
+}
+/* line 6, ..\themes\mkdb_ui\less\parts\footer.less */
+.footer-container .navbar.container,
+.page-node-270 .header-container .navbar.container,
+.footer-container .navbar.container-fluid,
+.page-node-270 .header-container .navbar.container-fluid {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* line 1, ..\themes\mkdb_ui\less\parts\blocks.less */
 .webform-client-form-270 {
-  background: gray;
+  background: url('../images/footer.jpg') no-repeat center center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-/* line 4, ..\themes\mkdb_ui\less\parts\blocks.less */
+/* line 7, ..\themes\mkdb_ui\less\parts\blocks.less */
 .webform-client-form-270 > div {
   padding-left: 15px;
   padding-right: 15px;
@@ -9965,6 +9997,14 @@ h1 {
   width: 100%;
 }
 /* line 51, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-header-slider .text-on-photo h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 48px;
+  letter-spacing: 1.92px;
+}
+/* line 59, ..\themes\mkdb_ui\less\parts\paragraphs.less */
 .paragraphs-item-header-slider .text-on-photo > div {
   padding-left: 15px;
   padding-right: 15px;
@@ -10010,7 +10050,7 @@ h1 {
     width: 1470px;
   }
 }
-/* line 58, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+/* line 66, ..\themes\mkdb_ui\less\parts\paragraphs.less */
 .paragraphs-item-media-teaser-with-link {
   padding-left: 15px;
   padding-right: 15px;
@@ -10055,9 +10095,20 @@ h1 {
     width: 1470px;
   }
 }
-/* line 61, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+/* line 69, ..\themes\mkdb_ui\less\parts\paragraphs.less */
 .paragraphs-item-media-teaser-with-link .carousel-container {
   max-width: 500px;
   float: left;
   margin-right: 100px;
+}
+/* line 1, ..\themes\mkdb_ui\less\pages\common.less */
+iframe {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  /* Firefox 10+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(99%);
+  /* Chrome 19+ & Safari 6+ */
+  -webkit-backface-visibility: hidden;
+  /* Fix for transition flickering */
 }
