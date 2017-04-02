@@ -5,6 +5,7 @@
  * these variables directly from ../bootstrap/less/variables.less to this file.
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&subset=cyrillic');
 @import 'https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css';
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css';
 /* line 9, ..\build-front\bower_components\bootstrap\less\normalize.less */
@@ -7755,10 +7756,12 @@ button.close {
 .webform-client-form-270 > div:after,
 .page-node-270 .field-name-field-paragraphs > .field-items:before,
 .page-node-270 .field-name-field-paragraphs > .field-items:after,
-.entity-paragraphs-item:before,
-.entity-paragraphs-item:after,
-.entity-paragraphs-item.paragraphs-item-header-slider .field:before,
-.entity-paragraphs-item.paragraphs-item-header-slider .field:after {
+.paragraphs-item-header-slider .field:before,
+.paragraphs-item-header-slider .field:after,
+.paragraphs-item-header-slider .text-on-photo > div:before,
+.paragraphs-item-header-slider .text-on-photo > div:after,
+.paragraphs-item-media-teaser-with-link:before,
+.paragraphs-item-media-teaser-with-link:after {
   content: " ";
   display: table;
 }
@@ -7781,8 +7784,9 @@ button.close {
 .modal-footer:after,
 .webform-client-form-270 > div:after,
 .page-node-270 .field-name-field-paragraphs > .field-items:after,
-.entity-paragraphs-item:after,
-.entity-paragraphs-item.paragraphs-item-header-slider .field:after {
+.paragraphs-item-header-slider .field:after,
+.paragraphs-item-header-slider .text-on-photo > div:after,
+.paragraphs-item-media-teaser-with-link:after {
   clear: both;
 }
 /* line 12, ..\build-front\bower_components\bootstrap\less\utilities.less */
@@ -8083,25 +8087,25 @@ button.close {
     display: none !important;
   }
 }
-/* line 19, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 11, ..\themes\mkdb_ui\less\_overrides.less */
 html.overlay-open .navbar-fixed-top {
   z-index: 400;
 }
-/* line 24, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 16, ..\themes\mkdb_ui\less\_overrides.less */
 html.js fieldset.collapsed {
   border-left-width: 1px;
   border-right-width: 1px;
   height: auto;
 }
+/* line 22, ..\themes\mkdb_ui\less\_overrides.less */
+html.js input.form-autocomplete {
+  background-image: none;
+}
+/* line 26, ..\themes\mkdb_ui\less\_overrides.less */
+html.js input.form-autocomplete {
+  background-image: none;
+}
 /* line 30, ..\themes\mkdb_ui\less\_overrides.less */
-html.js input.form-autocomplete {
-  background-image: none;
-}
-/* line 34, ..\themes\mkdb_ui\less\_overrides.less */
-html.js input.form-autocomplete {
-  background-image: none;
-}
-/* line 38, ..\themes\mkdb_ui\less\_overrides.less */
 html.js .autocomplete-throbber {
   background-position: 100% 2px;
   background-repeat: no-repeat;
@@ -8110,240 +8114,240 @@ html.js .autocomplete-throbber {
   margin: 2px 0 0 2px;
   width: 15px;
 }
-/* line 46, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 38, ..\themes\mkdb_ui\less\_overrides.less */
 html.js .autocomplete-throbber.throbbing {
   background-position: 100% -18px;
 }
-/* line 51, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 43, ..\themes\mkdb_ui\less\_overrides.less */
 body {
   position: relative;
 }
-/* line 55, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 47, ..\themes\mkdb_ui\less\_overrides.less */
 body.admin-expanded.admin-vertical.admin-nw .navbar,
 body.admin-expanded.admin-vertical.admin-sw .navbar {
   margin-left: 260px;
 }
-/* line 60, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 52, ..\themes\mkdb_ui\less\_overrides.less */
 body.navbar-is-fixed-top {
   padding-top: 64px !important;
 }
-/* line 63, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 55, ..\themes\mkdb_ui\less\_overrides.less */
 body.navbar-is-fixed-bottom {
   padding-bottom: 64px !important;
 }
-/* line 66, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 58, ..\themes\mkdb_ui\less\_overrides.less */
 body.toolbar {
   padding-top: 30px !important;
 }
-/* line 68, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 60, ..\themes\mkdb_ui\less\_overrides.less */
 body.toolbar .navbar-fixed-top {
   top: 30px;
 }
-/* line 71, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 63, ..\themes\mkdb_ui\less\_overrides.less */
 body.toolbar.navbar-is-fixed-top {
   padding-top: 94px !important;
 }
-/* line 75, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 67, ..\themes\mkdb_ui\less\_overrides.less */
 body.toolbar-drawer {
   padding-top: 64px !important;
 }
-/* line 77, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 69, ..\themes\mkdb_ui\less\_overrides.less */
 body.toolbar-drawer .navbar-fixed-top {
   top: 64px;
 }
-/* line 80, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 72, ..\themes\mkdb_ui\less\_overrides.less */
 body.toolbar-drawer.navbar-is-fixed-top {
   padding-top: 128px !important;
 }
-/* line 86, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 78, ..\themes\mkdb_ui\less\_overrides.less */
 body.admin-menu .navbar-fixed-top {
   top: 29px;
 }
-/* line 89, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 81, ..\themes\mkdb_ui\less\_overrides.less */
 body.admin-menu.navbar-is-fixed-top {
   padding-top: 93px !important;
 }
-/* line 93, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 85, ..\themes\mkdb_ui\less\_overrides.less */
 body div#admin-toolbar {
   z-index: 1600;
 }
-/* line 97, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 89, ..\themes\mkdb_ui\less\_overrides.less */
 body #toolbar,
 body #admin-menu,
 body #admin-toolbar {
   box-shadow: none;
 }
-/* line 101, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 93, ..\themes\mkdb_ui\less\_overrides.less */
 body #admin-menu {
   margin: 0;
   padding: 0;
   position: fixed;
   z-index: 1600;
 }
-/* line 106, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 98, ..\themes\mkdb_ui\less\_overrides.less */
 body #admin-menu .dropdown li {
   line-height: normal;
 }
 @media screen and (min-width: 768px) {
-  /* line 115, ..\themes\mkdb_ui\less\_overrides.less */
+  /* line 107, ..\themes\mkdb_ui\less\_overrides.less */
   .navbar.container {
     max-width: 720px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 118, ..\themes\mkdb_ui\less\_overrides.less */
+  /* line 110, ..\themes\mkdb_ui\less\_overrides.less */
   .navbar.container {
     max-width: 940px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 121, ..\themes\mkdb_ui\less\_overrides.less */
+  /* line 113, ..\themes\mkdb_ui\less\_overrides.less */
   .navbar.container {
     max-width: 1140px;
   }
 }
-@media screen and (min-width: 1400px) {
-  /* line 124, ..\themes\mkdb_ui\less\_overrides.less */
+@media screen and (min-width: 1500px) {
+  /* line 116, ..\themes\mkdb_ui\less\_overrides.less */
   .navbar.container {
-    max-width: 1340px;
+    max-width: 1440px;
   }
 }
-/* line 129, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 121, ..\themes\mkdb_ui\less\_overrides.less */
 .navbar.container,
 .navbar.container-fluid {
   margin-top: 20px;
 }
-/* line 133, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 125, ..\themes\mkdb_ui\less\_overrides.less */
 .navbar.container > .container,
 .navbar.container-fluid > .container-fluid {
   margin: 0;
   padding: 0;
   width: auto;
 }
-/* line 142, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 134, ..\themes\mkdb_ui\less\_overrides.less */
 #overlay-container,
 .overlay-modal-background,
 .overlay-element {
   z-index: 1500;
 }
-/* line 147, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 139, ..\themes\mkdb_ui\less\_overrides.less */
 #toolbar {
   z-index: 1600;
 }
-/* line 151, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 143, ..\themes\mkdb_ui\less\_overrides.less */
 .modal {
   z-index: 1620;
 }
-/* line 154, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 146, ..\themes\mkdb_ui\less\_overrides.less */
 .modal-dialog {
   z-index: 1630;
 }
-/* line 157, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 149, ..\themes\mkdb_ui\less\_overrides.less */
 .ctools-modal-dialog .modal-body {
   width: 100% !important;
   overflow: auto;
 }
-/* line 161, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 153, ..\themes\mkdb_ui\less\_overrides.less */
 .modal-backdrop {
   z-index: 1610;
 }
-/* line 164, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 156, ..\themes\mkdb_ui\less\_overrides.less */
 .footer {
   margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
   border-top: 1px solid #E5E5E5;
 }
-/* line 172, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 164, ..\themes\mkdb_ui\less\_overrides.less */
 .element-invisible {
   margin: 0;
   padding: 0;
   width: 1px;
 }
-/* line 179, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 171, ..\themes\mkdb_ui\less\_overrides.less */
 .navbar .logo {
   margin-right: -15px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (min-width: 768px) {
-  /* line 183, ..\themes\mkdb_ui\less\_overrides.less */
+  /* line 175, ..\themes\mkdb_ui\less\_overrides.less */
   .navbar .logo {
     margin-right: 0;
     padding-left: 0;
   }
 }
-/* line 190, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 182, ..\themes\mkdb_ui\less\_overrides.less */
 ul.secondary {
   float: left;
 }
 @media screen and (min-width: 768px) {
-  /* line 192, ..\themes\mkdb_ui\less\_overrides.less */
+  /* line 184, ..\themes\mkdb_ui\less\_overrides.less */
   ul.secondary {
     float: right;
   }
 }
-/* line 198, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 190, ..\themes\mkdb_ui\less\_overrides.less */
 .page-header {
   margin-top: 0;
 }
-/* line 204, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 196, ..\themes\mkdb_ui\less\_overrides.less */
 .block:first-child h2.block-title {
   margin-top: 0;
 }
-/* line 210, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 202, ..\themes\mkdb_ui\less\_overrides.less */
 p:last-child {
   margin-bottom: 0;
 }
-/* line 216, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 208, ..\themes\mkdb_ui\less\_overrides.less */
 .region-help > .glyphicon {
   font-size: 18px;
   float: left;
   margin: -0.05em 0.5em 0 0;
 }
-/* line 221, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 213, ..\themes\mkdb_ui\less\_overrides.less */
 .region-help .block {
   overflow: hidden;
 }
-/* line 227, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 219, ..\themes\mkdb_ui\less\_overrides.less */
 form#search-block-form {
   margin: 0;
 }
-/* line 230, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 222, ..\themes\mkdb_ui\less\_overrides.less */
 .navbar #block-search-form {
   float: none;
   margin: 5px 0 5px 5px;
 }
 @media screen and (min-width: 992px) {
-  /* line 233, ..\themes\mkdb_ui\less\_overrides.less */
+  /* line 225, ..\themes\mkdb_ui\less\_overrides.less */
   .navbar #block-search-form {
     float: right;
   }
 }
-/* line 237, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 229, ..\themes\mkdb_ui\less\_overrides.less */
 .navbar #block-search-form .input-group-btn {
   width: auto;
 }
-/* line 241, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 233, ..\themes\mkdb_ui\less\_overrides.less */
 .navbar-search .control-group {
   margin-bottom: 0px;
 }
-/* line 246, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 238, ..\themes\mkdb_ui\less\_overrides.less */
 ul.action-links {
   margin: 12px 0;
   padding: 0;
 }
-/* line 249, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 241, ..\themes\mkdb_ui\less\_overrides.less */
 ul.action-links li {
   display: inline;
   margin: 0;
   padding: 0 6px 0 0;
 }
-/* line 254, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 246, ..\themes\mkdb_ui\less\_overrides.less */
 ul.action-links .glyphicon {
   padding-right: 0.5em;
 }
-/* line 260, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 252, ..\themes\mkdb_ui\less\_overrides.less */
 input,
 textarea,
 select,
@@ -8351,116 +8355,116 @@ select,
   max-width: 100%;
   width: auto;
 }
-/* line 264, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 256, ..\themes\mkdb_ui\less\_overrides.less */
 input.error {
   color: #a94442;
   border-color: #ebccd1;
 }
-/* line 268, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 260, ..\themes\mkdb_ui\less\_overrides.less */
 fieldset legend.panel-heading {
   float: left;
   line-height: 1em;
   margin: 0;
 }
-/* line 273, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 265, ..\themes\mkdb_ui\less\_overrides.less */
 fieldset .panel-body {
   clear: both;
   display: inherit;
 }
-/* line 277, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 269, ..\themes\mkdb_ui\less\_overrides.less */
 fieldset .panel-heading a.panel-title {
   color: inherit;
   display: block;
   margin: -10px -15px;
   padding: 10px 15px;
 }
-/* line 282, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 274, ..\themes\mkdb_ui\less\_overrides.less */
 fieldset .panel-heading a.panel-title:hover {
   text-decoration: none;
 }
-/* line 286, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 278, ..\themes\mkdb_ui\less\_overrides.less */
 .form-group:last-child,
 .panel:last-child {
   margin-bottom: 0;
 }
-/* line 290, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 282, ..\themes\mkdb_ui\less\_overrides.less */
 .form-horizontal .form-group {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 294, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 286, ..\themes\mkdb_ui\less\_overrides.less */
 .form-actions {
   clear: both;
 }
-/* line 298, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 290, ..\themes\mkdb_ui\less\_overrides.less */
 .managed-files.table td:first-child {
   width: 100%;
 }
-/* line 302, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 294, ..\themes\mkdb_ui\less\_overrides.less */
 div.image-widget-data {
   float: none;
   overflow: hidden;
 }
-/* line 306, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 298, ..\themes\mkdb_ui\less\_overrides.less */
 table.sticky-header {
   z-index: 1;
 }
-/* line 309, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 301, ..\themes\mkdb_ui\less\_overrides.less */
 .resizable-textarea textarea {
   border-radius: 0px 0px 0 0;
 }
-/* line 312, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 304, ..\themes\mkdb_ui\less\_overrides.less */
 .text-format-wrapper {
   margin-bottom: 15px;
 }
-/* line 315, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 307, ..\themes\mkdb_ui\less\_overrides.less */
 .text-format-wrapper > .form-type-textarea,
 .text-format-wrapper .filter-wrapper {
   margin-bottom: 0;
 }
-/* line 320, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 312, ..\themes\mkdb_ui\less\_overrides.less */
 .filter-wrapper {
   border-radius: 0 0 0px 0px;
 }
-/* line 322, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 314, ..\themes\mkdb_ui\less\_overrides.less */
 .filter-wrapper .panel-body {
   padding: 7px;
 }
-/* line 325, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 317, ..\themes\mkdb_ui\less\_overrides.less */
 .filter-wrapper .form-type-select {
   min-width: 30%;
 }
-/* line 327, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 319, ..\themes\mkdb_ui\less\_overrides.less */
 .filter-wrapper .form-type-select .filter-list {
   width: 100%;
 }
-/* line 332, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 324, ..\themes\mkdb_ui\less\_overrides.less */
 .filter-help {
   margin-top: 5px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  /* line 335, ..\themes\mkdb_ui\less\_overrides.less */
+  /* line 327, ..\themes\mkdb_ui\less\_overrides.less */
   .filter-help {
     float: right;
   }
 }
-/* line 338, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 330, ..\themes\mkdb_ui\less\_overrides.less */
 .filter-help .glyphicon {
   margin: 0 5px 0 0;
   vertical-align: text-top;
 }
-/* line 344, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 336, ..\themes\mkdb_ui\less\_overrides.less */
 .radio:first-child,
 .checkbox:first-child {
   margin-top: 0;
 }
-/* line 347, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 339, ..\themes\mkdb_ui\less\_overrides.less */
 .radio:last-child,
 .checkbox:last-child {
   margin-bottom: 0;
 }
-/* line 351, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 343, ..\themes\mkdb_ui\less\_overrides.less */
 .help-block,
 .control-group .help-inline {
   color: #777777;
@@ -8469,31 +8473,31 @@ table.sticky-header {
   margin: 5px 0 10px;
   padding: 0;
 }
-/* line 357, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 349, ..\themes\mkdb_ui\less\_overrides.less */
 .panel-heading {
   display: block;
 }
-/* line 360, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 352, ..\themes\mkdb_ui\less\_overrides.less */
 a.tabledrag-handle .handle {
   height: auto;
   width: auto;
 }
-/* line 366, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 358, ..\themes\mkdb_ui\less\_overrides.less */
 .error {
   color: #a94442;
 }
-/* line 369, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 361, ..\themes\mkdb_ui\less\_overrides.less */
 div.error,
 table tr.error {
   background-color: #f2dede;
   color: #a94442;
 }
-/* line 374, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 366, ..\themes\mkdb_ui\less\_overrides.less */
 .form-group.error,
 .form-group.has-error {
   background: none;
 }
-/* line 377, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 369, ..\themes\mkdb_ui\less\_overrides.less */
 .form-group.error label,
 .form-group.has-error label,
 .form-group.error .control-label,
@@ -8501,7 +8505,7 @@ table tr.error {
   color: #a94442;
   font-weight: 600;
 }
-/* line 381, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 373, ..\themes\mkdb_ui\less\_overrides.less */
 .form-group.error input,
 .form-group.has-error input,
 .form-group.error textarea,
@@ -8512,53 +8516,53 @@ table tr.error {
 .form-group.has-error .uneditable-input {
   color: #555555;
 }
-/* line 384, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 376, ..\themes\mkdb_ui\less\_overrides.less */
 .form-group.error .help-block,
 .form-group.has-error .help-block,
 .form-group.error .help-inline,
 .form-group.has-error .help-inline {
   color: #777777;
 }
-/* line 390, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 382, ..\themes\mkdb_ui\less\_overrides.less */
 .nav-tabs {
   margin-bottom: 10px;
 }
-/* line 393, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 385, ..\themes\mkdb_ui\less\_overrides.less */
 ul li.collapsed,
 ul li.expanded,
 ul li.leaf {
   list-style: none;
   list-style-image: none;
 }
-/* line 399, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 391, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs--secondary {
   margin: 0 0 10px;
 }
-/* line 404, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 396, ..\themes\mkdb_ui\less\_overrides.less */
 .submitted {
   margin-bottom: 1em;
   font-style: italic;
   font-weight: normal;
   color: #777;
 }
-/* line 412, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 404, ..\themes\mkdb_ui\less\_overrides.less */
 .form-type-password-confirm {
   position: relative;
 }
-/* line 414, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 406, ..\themes\mkdb_ui\less\_overrides.less */
 .form-type-password-confirm label {
   display: block;
 }
-/* line 416, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 408, ..\themes\mkdb_ui\less\_overrides.less */
 .form-type-password-confirm label .label {
   float: right;
 }
-/* line 420, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 412, ..\themes\mkdb_ui\less\_overrides.less */
 .form-type-password-confirm .password-help {
   padding-left: 2em;
 }
 @media (min-width: 768px) {
-  /* line 422, ..\themes\mkdb_ui\less\_overrides.less */
+  /* line 414, ..\themes\mkdb_ui\less\_overrides.less */
   .form-type-password-confirm .password-help {
     border-left: 1px solid #ddd;
     left: 50%;
@@ -8567,12 +8571,12 @@ ul li.leaf {
   }
 }
 @media (min-width: 992px) {
-  /* line 428, ..\themes\mkdb_ui\less\_overrides.less */
+  /* line 420, ..\themes\mkdb_ui\less\_overrides.less */
   .form-type-password-confirm .password-help {
     left: 33.33333333%;
   }
 }
-/* line 432, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 424, ..\themes\mkdb_ui\less\_overrides.less */
 .form-type-password-confirm .progress {
   background: transparent;
   border-radius: 0 0 5px 5px;
@@ -8580,36 +8584,36 @@ ul li.leaf {
   height: 4px;
   margin: -5px 0px 0;
 }
-/* line 441, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 433, ..\themes\mkdb_ui\less\_overrides.less */
 .form-type-password-confirm .form-type-password {
   clear: left;
 }
-/* line 444, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 436, ..\themes\mkdb_ui\less\_overrides.less */
 .form-type-password-confirm .form-control-feedback {
   right: 15px;
 }
-/* line 447, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 439, ..\themes\mkdb_ui\less\_overrides.less */
 .form-type-password-confirm .help-block {
   clear: both;
 }
-/* line 454, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 446, ..\themes\mkdb_ui\less\_overrides.less */
 ul.pagination li > a.progress-disabled {
   float: left;
 }
-/* line 461, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 453, ..\themes\mkdb_ui\less\_overrides.less */
 .form-autocomplete .glyphicon {
   color: #777777;
   font-size: 120%;
 }
-/* line 464, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 456, ..\themes\mkdb_ui\less\_overrides.less */
 .form-autocomplete .glyphicon.glyphicon-spin {
   color: #337ab7;
 }
-/* line 468, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 460, ..\themes\mkdb_ui\less\_overrides.less */
 .form-autocomplete .input-group-addon {
   background-color: #ffffff;
 }
-/* line 474, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 466, ..\themes\mkdb_ui\less\_overrides.less */
 .ajax-progress-bar {
   border-radius: 0 0 0px 0px;
   border: 1px solid #ccc;
@@ -8617,12 +8621,12 @@ ul.pagination li > a.progress-disabled {
   padding: 6px 12px;
   width: 100%;
 }
-/* line 480, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 472, ..\themes\mkdb_ui\less\_overrides.less */
 .ajax-progress-bar .progress {
   height: 8px;
   margin: 0;
 }
-/* line 484, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 476, ..\themes\mkdb_ui\less\_overrides.less */
 .ajax-progress-bar .percentage,
 .ajax-progress-bar .message {
   color: #777777;
@@ -8631,34 +8635,34 @@ ul.pagination li > a.progress-disabled {
   margin: 5px 0 0;
   padding: 0;
 }
-/* line 494, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 486, ..\themes\mkdb_ui\less\_overrides.less */
 .glyphicon-spin {
   display: inline-block;
   -webkit-animation: spin 1s infinite linear;
   animation: spin 1s infinite linear;
 }
-/* line 501, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 493, ..\themes\mkdb_ui\less\_overrides.less */
 a .glyphicon-spin {
   display: inline-block;
   text-decoration: none;
 }
 @-webkit-keyframes spin {
-  /* line 514, ..\themes\mkdb_ui\less\_overrides.less */
+  /* line 506, ..\themes\mkdb_ui\less\_overrides.less */
   0% {
     -webkit-transform: rotate(0deg);
   }
-  /* line 517, ..\themes\mkdb_ui\less\_overrides.less */
+  /* line 509, ..\themes\mkdb_ui\less\_overrides.less */
   100% {
     -webkit-transform: rotate(359deg);
   }
 }
 @keyframes spin {
-  /* line 538, ..\themes\mkdb_ui\less\_overrides.less */
+  /* line 530, ..\themes\mkdb_ui\less\_overrides.less */
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-  /* line 541, ..\themes\mkdb_ui\less\_overrides.less */
+  /* line 533, ..\themes\mkdb_ui\less\_overrides.less */
   100% {
     -webkit-transform: rotate(359deg);
             transform: rotate(359deg);
@@ -8669,84 +8673,84 @@ a .glyphicon-spin {
  * @see http://stackoverflow.com/questions/18432577/stacked-tabs-in-bootstrap-3
  * @see http://bootply.com/74926
  */
-/* line 551, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 543, ..\themes\mkdb_ui\less\_overrides.less */
 .tabbable {
   margin-bottom: 20px;
 }
-/* line 555, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 547, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-below > .nav-tabs,
 .tabs-left > .nav-tabs,
 .tabs-right > .nav-tabs {
   border-bottom: 0;
 }
-/* line 557, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 549, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-below > .nav-tabs .summary,
 .tabs-left > .nav-tabs .summary,
 .tabs-right > .nav-tabs .summary {
   color: #777777;
   font-size: 12px;
 }
-/* line 563, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 555, ..\themes\mkdb_ui\less\_overrides.less */
 .tab-pane > .panel-heading {
   display: none;
 }
-/* line 566, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 558, ..\themes\mkdb_ui\less\_overrides.less */
 .tab-content > .active {
   display: block;
 }
-/* line 572, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 564, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-below > .nav-tabs {
   border-top: 1px solid #ddd;
 }
-/* line 574, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 566, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-below > .nav-tabs > li {
   margin-top: -1px;
   margin-bottom: 0;
 }
-/* line 577, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 569, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-below > .nav-tabs > li > a {
   border-radius: 0 0 0px 0px;
 }
-/* line 579, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 571, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-below > .nav-tabs > li > a:hover,
 .tabs-below > .nav-tabs > li > a:focus {
   border-top-color: #ddd;
   border-bottom-color: transparent;
 }
-/* line 587, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 579, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-below > .nav-tabs > .active > a,
 .tabs-below > .nav-tabs > .active > a:hover,
 .tabs-below > .nav-tabs > .active > a:focus {
   border-color: transparent #ddd #ddd #ddd;
 }
-/* line 599, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 591, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-left > .nav-tabs,
 .tabs-right > .nav-tabs {
   padding-bottom: 20px;
   width: 220px;
 }
-/* line 602, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 594, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-left > .nav-tabs > li,
 .tabs-right > .nav-tabs > li {
   float: none;
 }
-/* line 604, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 596, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-left > .nav-tabs > li:focus,
 .tabs-right > .nav-tabs > li:focus {
   outline: 0;
 }
-/* line 607, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 599, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-left > .nav-tabs > li > a,
 .tabs-right > .nav-tabs > li > a {
   margin-right: 0;
   margin-bottom: 3px;
 }
-/* line 610, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 602, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-left > .nav-tabs > li > a:focus,
 .tabs-right > .nav-tabs > li > a:focus {
   outline: 0;
 }
-/* line 616, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 608, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-left > .tab-content,
 .tabs-right > .tab-content {
   border-radius: 0 0px 0px 0px;
@@ -8755,75 +8759,75 @@ a .glyphicon-spin {
   overflow: hidden;
   padding: 10px 15px;
 }
-/* line 627, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 619, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-left > .nav-tabs {
   float: left;
   margin-right: -1px;
 }
-/* line 630, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 622, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-left > .nav-tabs > li > a {
   border-radius: 0px 0 0 0px;
 }
-/* line 632, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 624, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-left > .nav-tabs > li > a:hover,
 .tabs-left > .nav-tabs > li > a:focus {
   border-color: #eeeeee #ddd #eeeeee #eeeeee;
 }
-/* line 637, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 629, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-left > .nav-tabs > .active > a,
 .tabs-left > .nav-tabs > .active > a:hover,
 .tabs-left > .nav-tabs > .active > a:focus {
   border-color: #ddd transparent #ddd #ddd;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
 }
-/* line 648, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 640, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-right > .nav-tabs {
   float: right;
   margin-left: -1px;
 }
-/* line 651, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 643, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-right > .nav-tabs > li > a {
   border-radius: 0 0px 0px 0;
 }
-/* line 653, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 645, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-right > .nav-tabs > li > a:hover,
 .tabs-right > .nav-tabs > li > a:focus {
   border-color: #eeeeee #eeeeee #eeeeee #ddd;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
 }
-/* line 659, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 651, ..\themes\mkdb_ui\less\_overrides.less */
 .tabs-right > .nav-tabs > .active > a,
 .tabs-right > .nav-tabs > .active > a:hover,
 .tabs-right > .nav-tabs > .active > a:focus {
   border-color: #ddd #ddd #ddd transparent;
 }
-/* line 668, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 660, ..\themes\mkdb_ui\less\_overrides.less */
 th.checkbox,
 td.checkbox,
 th.radio,
 td.radio {
   display: table-cell;
 }
-/* line 677, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 669, ..\themes\mkdb_ui\less\_overrides.less */
 .views-display-settings .label {
   font-size: 100%;
   color: #666666;
 }
-/* line 681, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 673, ..\themes\mkdb_ui\less\_overrides.less */
 .views-display-settings .footer {
   padding: 0;
   margin: 4px 0 0 0;
 }
-/* line 686, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 678, ..\themes\mkdb_ui\less\_overrides.less */
 .views-exposed-form .views-exposed-widget .btn {
   margin-top: 1.8em;
 }
-/* line 692, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 684, ..\themes\mkdb_ui\less\_overrides.less */
 table .radio input[type="radio"],
 table .checkbox input[type="checkbox"] {
   max-width: inherit;
 }
-/* line 699, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 691, ..\themes\mkdb_ui\less\_overrides.less */
 .form-horizontal .form-group label {
   position: relative;
   min-height: 1px;
@@ -8835,61 +8839,61 @@ table .checkbox input[type="checkbox"] {
   text-align: right;
 }
 @media (min-width: 768px) {
-  /* line 709, ..\themes\mkdb_ui\less\_overrides.less */
+  /* line 701, ..\themes\mkdb_ui\less\_overrides.less */
   .form-horizontal .form-group label {
     float: left;
     width: 16.66666667%;
   }
 }
-/* line 716, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 708, ..\themes\mkdb_ui\less\_overrides.less */
 .alert a {
   font-weight: bold;
 }
-/* line 719, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 711, ..\themes\mkdb_ui\less\_overrides.less */
 .alert-success a {
   color: #2b542c;
 }
-/* line 722, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 714, ..\themes\mkdb_ui\less\_overrides.less */
 .alert-info a {
   color: #245269;
 }
-/* line 725, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 717, ..\themes\mkdb_ui\less\_overrides.less */
 .alert-warning a {
   color: #66512c;
 }
-/* line 728, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 720, ..\themes\mkdb_ui\less\_overrides.less */
 .alert-danger a {
   color: #843534;
 }
-/* line 733, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 725, ..\themes\mkdb_ui\less\_overrides.less */
 div.image-style-new,
 div.image-style-new div {
   display: block;
 }
-/* line 737, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 729, ..\themes\mkdb_ui\less\_overrides.less */
 div.image-style-new div.input-group {
   display: table;
 }
-/* line 741, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 733, ..\themes\mkdb_ui\less\_overrides.less */
 td.module,
 .table-striped > tbody > tr:nth-child(odd) > td.module,
 .table > tbody > tr > td.module {
   background: #ddd;
   font-weight: 700;
 }
-/* line 749, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 741, ..\themes\mkdb_ui\less\_overrides.less */
 .book-toc > .dropdown-menu {
   overflow: hidden;
 }
-/* line 751, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 743, ..\themes\mkdb_ui\less\_overrides.less */
 .book-toc > .dropdown-menu > .dropdown-header {
   white-space: nowrap;
 }
-/* line 754, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 746, ..\themes\mkdb_ui\less\_overrides.less */
 .book-toc > .dropdown-menu > li:nth-child(1) > a {
   font-weight: bold;
 }
-/* line 757, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 749, ..\themes\mkdb_ui\less\_overrides.less */
 .book-toc > .dropdown-menu .dropdown-menu {
   box-shadow: none;
   border: 0;
@@ -8900,49 +8904,49 @@ td.module,
   position: static;
   width: 100%;
 }
-/* line 766, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 758, ..\themes\mkdb_ui\less\_overrides.less */
 .book-toc > .dropdown-menu .dropdown-menu > li {
   padding-left: 20px;
 }
-/* line 768, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 760, ..\themes\mkdb_ui\less\_overrides.less */
 .book-toc > .dropdown-menu .dropdown-menu > li > a {
   margin-left: -40px;
   padding-left: 60px;
 }
-/* line 777, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 769, ..\themes\mkdb_ui\less\_overrides.less */
 #features-filter .form-item.form-type-checkbox {
   padding-left: 20px;
 }
-/* line 780, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 772, ..\themes\mkdb_ui\less\_overrides.less */
 fieldset.features-export-component {
   font-size: 12px;
 }
-/* line 782, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 774, ..\themes\mkdb_ui\less\_overrides.less */
 html.js #features-export-form fieldset.features-export-component,
 fieldset.features-export-component {
   margin: 0 0 10px;
 }
-/* line 785, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 777, ..\themes\mkdb_ui\less\_overrides.less */
 fieldset.features-export-component .panel-heading {
   padding: 5px 10px;
 }
-/* line 787, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 779, ..\themes\mkdb_ui\less\_overrides.less */
 fieldset.features-export-component .panel-heading a.panel-title {
   font-size: 12px;
   font-weight: 500;
   margin: -5px -10px;
   padding: 5px 10px;
 }
-/* line 794, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 786, ..\themes\mkdb_ui\less\_overrides.less */
 fieldset.features-export-component .panel-body {
   padding: 0 10px;
 }
-/* line 798, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 790, ..\themes\mkdb_ui\less\_overrides.less */
 div.features-export-list {
   margin: -11px 0 10px;
   padding: 0 10px;
 }
-/* line 805, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 797, ..\themes\mkdb_ui\less\_overrides.less */
 fieldset.features-export-component .component-select .form-type-checkbox,
 div.features-export-list .form-type-checkbox {
   line-height: 1em;
@@ -8950,57 +8954,57 @@ div.features-export-list .form-type-checkbox {
   min-height: 0;
   padding: 3px 3px 3px 25px!important;
 }
-/* line 810, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 802, ..\themes\mkdb_ui\less\_overrides.less */
 fieldset.features-export-component .component-select .form-type-checkbox input[type=checkbox],
 div.features-export-list .form-type-checkbox input[type=checkbox] {
   margin-top: 0;
 }
-/* line 817, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 809, ..\themes\mkdb_ui\less\_overrides.less */
 body.navbar-is-fixed-top.navbar-administration.navbar-horizontal.navbar-tray-open .navbar-fixed-top {
   top: 79px;
 }
-/* line 820, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 812, ..\themes\mkdb_ui\less\_overrides.less */
 body.navbar-is-fixed-top.navbar-administration .navbar-fixed-top {
   top: 39px;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /* line 825, ..\themes\mkdb_ui\less\_overrides.less */
+  /* line 817, ..\themes\mkdb_ui\less\_overrides.less */
   body.navbar-is-fixed-top.navbar-administration.navbar-vertical.navbar-tray-open .navbar-fixed-top {
     left: 240px;
     left: 24rem;
   }
 }
-/* line 830, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 822, ..\themes\mkdb_ui\less\_overrides.less */
 .navbar-administration #navbar-administration.navbar-oriented .navbar-bar {
   z-index: 1032;
 }
-/* line 833, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 825, ..\themes\mkdb_ui\less\_overrides.less */
 .navbar-administration #navbar-administration .navbar-tray {
   z-index: 1031;
 }
-/* line 836, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 828, ..\themes\mkdb_ui\less\_overrides.less */
 body.navbar-is-fixed-top.navbar-administration {
   padding-top: 103px!important;
 }
-/* line 839, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 831, ..\themes\mkdb_ui\less\_overrides.less */
 body.navbar-is-fixed-top.navbar-administration.navbar-horizontal.navbar-tray-open {
   padding-top: 143px!important;
 }
-/* line 842, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 834, ..\themes\mkdb_ui\less\_overrides.less */
 body.navbar-tray-open.navbar-vertical.navbar-fixed {
   margin-left: 240px;
   margin-left: 24rem;
 }
-/* line 846, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 838, ..\themes\mkdb_ui\less\_overrides.less */
 #navbar-administration.navbar-oriented .navbar-tray-vertical {
   width: 24rem;
 }
-/* line 850, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 842, ..\themes\mkdb_ui\less\_overrides.less */
 .dropdown-submenu {
   position: relative;
 }
-/* line 851, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 843, ..\themes\mkdb_ui\less\_overrides.less */
 .dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
@@ -9008,11 +9012,11 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   margin-left: -1px;
   border-radius: 0;
 }
-/* line 852, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 844, ..\themes\mkdb_ui\less\_overrides.less */
 .dropdown-submenu:hover > .dropdown-menu {
   display: block;
 }
-/* line 853, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 845, ..\themes\mkdb_ui\less\_overrides.less */
 .dropdown-submenu > a:after {
   display: block;
   content: " ";
@@ -9026,21 +9030,21 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   margin-top: 5px;
   margin-right: -10px;
 }
-/* line 854, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 846, ..\themes\mkdb_ui\less\_overrides.less */
 .dropdown-submenu:hover > a:after {
   border-left-color: #fff;
 }
-/* line 855, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 847, ..\themes\mkdb_ui\less\_overrides.less */
 .dropdown-submenu.pull-left {
   float: none;
 }
-/* line 856, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 848, ..\themes\mkdb_ui\less\_overrides.less */
 .dropdown-submenu.pull-left > .dropdown-menu {
   left: -100%;
   margin-left: 10px;
   border-radius: 6px 0 6px 6px;
 }
-/* line 858, ..\themes\mkdb_ui\less\_overrides.less */
+/* line 850, ..\themes\mkdb_ui\less\_overrides.less */
 .dropdown-submenu > a:after {
   border-left-color: white;
 }
@@ -9051,7 +9055,19 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 5, ..\themes\mkdb_ui\less\_base.less */
+/*
+X * S / 1000 = P
+X is equal to the letter-tracking value in Photoshop
+S is the font-size in pixels
+P is the resulted value in "px" to use in CSS*/
+@font-face {
+  font-family: 'bebas_neue_regularregular';
+  src: url('../fonts/bebasneue_regular-webfont.eot');
+  src: url('../fonts/bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/bebasneue_regular-webfont.woff2') format('woff2'), url('../fonts/bebasneue_regular-webfont.woff') format('woff'), url('../fonts/bebasneue_regular-webfont.svg#bebas_neue_regularregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 17, ..\themes\mkdb_ui\less\_base.less */
 #bpMArker {
   display: inline-block;
   visibility: visible;
@@ -9059,52 +9075,53 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
   width: 1px;
 }
 @media (min-width: 1200px) {
-  /* line 11, ..\themes\mkdb_ui\less\_base.less */
+  /* line 23, ..\themes\mkdb_ui\less\_base.less */
   #bpMArker {
     display: none;
     visibility: hidden;
   }
 }
 @media (min-width: 992px) {
-  /* line 19, ..\themes\mkdb_ui\less\_base.less */
+  /* line 31, ..\themes\mkdb_ui\less\_base.less */
   .not-front #bpMArker {
     display: none;
     visibility: hidden;
   }
 }
-/* line 26, ..\themes\mkdb_ui\less\_base.less */
+/* line 38, ..\themes\mkdb_ui\less\_base.less */
 html {
   height: 100%;
   font-size: 24px;
 }
-/* line 31, ..\themes\mkdb_ui\less\_base.less */
+/* line 43, ..\themes\mkdb_ui\less\_base.less */
 body {
   font-size: 10px;
   font-size: 1rem;
   line-height: 13.333333333333332px;
   line-height: 1.3333333333333333rem;
+  font-family: 'Rubik', sans-serif;
 }
 @media screen and (max-width: 768px) {
-  /* line 34, ..\themes\mkdb_ui\less\_base.less */
+  /* line 48, ..\themes\mkdb_ui\less\_base.less */
   body {
     width: 768px;
   }
-  /* line 35, ..\themes\mkdb_ui\less\_base.less */
+  /* line 49, ..\themes\mkdb_ui\less\_base.less */
   body * {
     max-width: 768px;
   }
-  /* line 39, ..\themes\mkdb_ui\less\_base.less */
+  /* line 54, ..\themes\mkdb_ui\less\_base.less */
   body .container {
     width: 768px;
   }
 }
 @media screen and (max-width: 1200px) {
-  /* line 44, ..\themes\mkdb_ui\less\_base.less */
+  /* line 59, ..\themes\mkdb_ui\less\_base.less */
   body {
     padding-top: 55px;
   }
 }
-/* line 49, ..\themes\mkdb_ui\less\_base.less */
+/* line 64, ..\themes\mkdb_ui\less\_base.less */
 h1,
 h2,
 h3,
@@ -9115,29 +9132,29 @@ h6 {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 54, ..\themes\mkdb_ui\less\_base.less */
+/* line 69, ..\themes\mkdb_ui\less\_base.less */
 a {
   transition: 0.3s all linear;
 }
-/* line 58, ..\themes\mkdb_ui\less\_base.less */
+/* line 73, ..\themes\mkdb_ui\less\_base.less */
 p {
   margin-bottom: 40px;
 }
-/* line 62, ..\themes\mkdb_ui\less\_base.less */
+/* line 77, ..\themes\mkdb_ui\less\_base.less */
 img {
   max-width: 100%;
   height: auto;
 }
-/* line 67, ..\themes\mkdb_ui\less\_base.less */
+/* line 82, ..\themes\mkdb_ui\less\_base.less */
 .translation_en,
 .translation_uk {
   display: none !important;
 }
-/* line 72, ..\themes\mkdb_ui\less\_base.less */
+/* line 87, ..\themes\mkdb_ui\less\_base.less */
 h1.page-header {
   border: none;
 }
-/* line 78, ..\themes\mkdb_ui\less\_base.less */
+/* line 93, ..\themes\mkdb_ui\less\_base.less */
 .pager.pager-load-more a {
   border: #231f20 1px solid;
   border-radius: 0;
@@ -9149,27 +9166,27 @@ h1.page-header {
   padding: 10px 35px;
   text-decoration: none;
 }
-/* line 84, ..\themes\mkdb_ui\less\_base.less */
+/* line 99, ..\themes\mkdb_ui\less\_base.less */
 .region-content ul.flippy {
   margin-top: 60px;
 }
-/* line 90, ..\themes\mkdb_ui\less\_base.less */
+/* line 105, ..\themes\mkdb_ui\less\_base.less */
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
 }
-/* line 94, ..\themes\mkdb_ui\less\_base.less */
+/* line 109, ..\themes\mkdb_ui\less\_base.less */
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   opacity: 0;
 }
-/* line 100, ..\themes\mkdb_ui\less\_base.less */
+/* line 115, ..\themes\mkdb_ui\less\_base.less */
 .carousel-fade .carousel-inner .active,
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1;
 }
-/* line 106, ..\themes\mkdb_ui\less\_base.less */
+/* line 121, ..\themes\mkdb_ui\less\_base.less */
 .carousel-fade .carousel-inner .next,
 .carousel-fade .carousel-inner .prev,
 .carousel-fade .carousel-inner .active.left,
@@ -9178,11 +9195,11 @@ h1.page-header {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
-/* line 115, ..\themes\mkdb_ui\less\_base.less */
+/* line 130, ..\themes\mkdb_ui\less\_base.less */
 .carousel-fade .carousel-control {
   z-index: 2;
 }
-/* line 120, ..\themes\mkdb_ui\less\_base.less */
+/* line 135, ..\themes\mkdb_ui\less\_base.less */
 html,
 body,
 .carousel,
@@ -9190,26 +9207,26 @@ body,
 .carousel-inner .item {
   height: 100%;
 }
-/* line 136, ..\themes\mkdb_ui\less\_base.less */
+/* line 151, ..\themes\mkdb_ui\less\_base.less */
 .views-field-created {
   font-size: 5.833333333333334px !important;
   font-size: 0.5833333333333334rem !important;
 }
-/* line 140, ..\themes\mkdb_ui\less\_base.less */
+/* line 155, ..\themes\mkdb_ui\less\_base.less */
 .submitted-by {
   font-size: 7.5px !important;
   font-size: 0.75rem !important;
 }
-/* line 145, ..\themes\mkdb_ui\less\_base.less */
+/* line 160, ..\themes\mkdb_ui\less\_base.less */
 .node .translation_ru,
 .node .translation_eng {
   display: none !important;
 }
-/* line 151, ..\themes\mkdb_ui\less\_base.less */
+/* line 166, ..\themes\mkdb_ui\less\_base.less */
 h1 {
   display: none;
 }
-/* line 15, ..\themes\mkdb_ui\less\_grid.less */
+/* line 23, ..\themes\mkdb_ui\less\_grid.less */
 .container-full {
   margin: 0 auto;
   width: 100%;
@@ -9222,13 +9239,13 @@ h1 {
 *   Site: WebVakman.nl
 *
 */
-@media (min-width: 1200px) and (max-width: 1400px - 1) {
-  /* line 31, ..\themes\mkdb_ui\less\_grid.less */
+@media (min-width: 1200px) and (max-width: 1500px - 1) {
+  /* line 38, ..\themes\mkdb_ui\less\_grid.less */
   .hidden-lg {
     display: none !important;
   }
 }
-/* line 37, ..\themes\mkdb_ui\less\_grid.less */
+/* line 44, ..\themes\mkdb_ui\less\_grid.less */
 .visible-xl-block,
 .visible-xl-inline,
 .visible-xl-inline-block,
@@ -9236,19 +9253,19 @@ h1 {
   display: none !important;
 }
 @media (max-width: 767px) {
-  /* line 45, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 52, ..\themes\mkdb_ui\less\_grid.less */
   .col-sm-12 {
     width: 100%;
   }
 }
-@media (min-width: 1400px) {
-  /* line 51, ..\themes\mkdb_ui\less\_grid.less */
+@media (min-width: 1500px) {
+  /* line 58, ..\themes\mkdb_ui\less\_grid.less */
   .container {
-    width: 1370px;
+    width: 1470px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 57, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 64, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-1,
   .col-xl-2,
   .col-xl-3,
@@ -9263,249 +9280,304 @@ h1 {
   .col-xl-12 {
     float: left;
   }
-  /* line 61, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 68, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-12 {
     width: 100%;
   }
-  /* line 65, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 72, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-11 {
     width: 91.66666667%;
   }
-  /* line 69, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 76, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-10 {
     width: 83.33333333%;
   }
-  /* line 73, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 80, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-9 {
     width: 75%;
   }
-  /* line 77, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 84, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-8 {
     width: 66.66666667%;
   }
-  /* line 81, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 88, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-7 {
     width: 58.33333333%;
   }
-  /* line 85, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 92, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-6 {
     width: 50%;
   }
-  /* line 89, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 96, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-5 {
     width: 41.66666667%;
   }
-  /* line 93, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 100, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-4 {
     width: 33.33333333%;
   }
-  /* line 97, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 104, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-3 {
     width: 25%;
   }
-  /* line 101, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 108, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-2 {
     width: 16.66666667%;
   }
-  /* line 105, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 112, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-1 {
     width: 8.33333333%;
   }
-  /* line 109, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 116, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-12 {
     right: 100%;
   }
-  /* line 113, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 120, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-11 {
     right: 91.66666667%;
   }
-  /* line 117, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 124, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-10 {
     right: 83.33333333%;
   }
-  /* line 121, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 128, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-9 {
     right: 75%;
   }
-  /* line 125, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 132, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-8 {
     right: 66.66666667%;
   }
-  /* line 129, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 136, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-7 {
     right: 58.33333333%;
   }
-  /* line 133, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 140, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-6 {
     right: 50%;
   }
-  /* line 137, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 144, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-5 {
     right: 41.66666667%;
   }
-  /* line 141, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 148, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-4 {
     right: 33.33333333%;
   }
-  /* line 145, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 152, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-3 {
     right: 25%;
   }
-  /* line 149, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 156, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-2 {
     right: 16.66666667%;
   }
-  /* line 153, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 160, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-1 {
     right: 8.33333333%;
   }
-  /* line 157, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 164, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-pull-0 {
     right: auto;
   }
-  /* line 161, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 168, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-12 {
     left: 100%;
   }
-  /* line 165, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 172, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-11 {
     left: 91.66666667%;
   }
-  /* line 169, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 176, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-10 {
     left: 83.33333333%;
   }
-  /* line 173, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 180, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-9 {
     left: 75%;
   }
-  /* line 177, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 184, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-8 {
     left: 66.66666667%;
   }
-  /* line 181, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 188, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-7 {
     left: 58.33333333%;
   }
-  /* line 185, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 192, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-6 {
     left: 50%;
   }
-  /* line 189, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 196, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-5 {
     left: 41.66666667%;
   }
-  /* line 193, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 200, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-4 {
     left: 33.33333333%;
   }
-  /* line 197, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 204, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-3 {
     left: 25%;
   }
-  /* line 201, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 208, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-2 {
     left: 16.66666667%;
   }
-  /* line 205, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 212, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-1 {
     left: 8.33333333%;
   }
-  /* line 209, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 216, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-push-0 {
     left: auto;
   }
-  /* line 213, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 220, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-12 {
     margin-left: 100%;
   }
-  /* line 217, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 224, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-11 {
     margin-left: 91.66666667%;
   }
-  /* line 221, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 228, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-10 {
     margin-left: 83.33333333%;
   }
-  /* line 225, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 232, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-9 {
     margin-left: 75%;
   }
-  /* line 229, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 236, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-8 {
     margin-left: 66.66666667%;
   }
-  /* line 233, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 240, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-7 {
     margin-left: 58.33333333%;
   }
-  /* line 237, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 244, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-6 {
     margin-left: 50%;
   }
-  /* line 241, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 248, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-5 {
     margin-left: 41.66666667%;
   }
-  /* line 245, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 252, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-4 {
     margin-left: 33.33333333%;
   }
-  /* line 249, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 256, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-3 {
     margin-left: 25%;
   }
-  /* line 253, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 260, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-2 {
     margin-left: 16.66666667%;
   }
-  /* line 257, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 264, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-1 {
     margin-left: 8.33333333%;
   }
-  /* line 261, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 268, ..\themes\mkdb_ui\less\_grid.less */
   .col-xl-offset-0 {
     margin-left: 0;
   }
-  /* line 265, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 272, ..\themes\mkdb_ui\less\_grid.less */
   .visible-xl {
     display: block !important;
   }
-  /* line 269, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 276, ..\themes\mkdb_ui\less\_grid.less */
   table.visible-xl {
     display: table;
   }
-  /* line 273, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 280, ..\themes\mkdb_ui\less\_grid.less */
   tr.visible-xl {
     display: table-row !important;
   }
-  /* line 277, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 284, ..\themes\mkdb_ui\less\_grid.less */
   th.visible-xl,
   td.visible-xl {
     display: table-cell !important;
   }
-  /* line 281, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 288, ..\themes\mkdb_ui\less\_grid.less */
   .visible-xl-block {
     display: block !important;
   }
-  /* line 285, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 292, ..\themes\mkdb_ui\less\_grid.less */
   .visible-xl-inline {
     display: inline !important;
   }
-  /* line 289, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 296, ..\themes\mkdb_ui\less\_grid.less */
   .visible-xl-inline-block {
     display: inline-block !important;
   }
-  /* line 293, ..\themes\mkdb_ui\less\_grid.less */
+  /* line 300, ..\themes\mkdb_ui\less\_grid.less */
   .hidden-xl {
     display: none !important;
   }
 }
+/* line 1, ..\themes\mkdb_ui\less\parts\navbar.less */
+.header-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+/* line 10, ..\themes\mkdb_ui\less\parts\navbar.less */
+.logged-in .header-container {
+  position: static;
+}
+/* line 15, ..\themes\mkdb_ui\less\parts\navbar.less */
+.navbar {
+  background: none;
+  border: none;
+  font-family: 'bebas_neue_regularregular';
+}
+/* line 20, ..\themes\mkdb_ui\less\parts\navbar.less */
+.navbar .navbar-nav {
+  float: right;
+}
+/* line 23, ..\themes\mkdb_ui\less\parts\navbar.less */
+.navbar .navbar-nav > li > a {
+  color: white;
+}
+/* line 27, ..\themes\mkdb_ui\less\parts\navbar.less */
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+  background: none;
+}
+/* line 36, ..\themes\mkdb_ui\less\parts\navbar.less */
+.logo svg {
+  width: 120px;
+  height: 60px;
+  fill: white;
+}
+/* line 1, ..\themes\mkdb_ui\less\parts\footer.less */
+.footer-container,
+.page-node-270 .header-container {
+  background: #1c1d1e;
+  position: static;
+}
+/* line 6, ..\themes\mkdb_ui\less\parts\footer.less */
+.footer-container .navbar.container,
+.page-node-270 .header-container .navbar.container,
+.footer-container .navbar.container-fluid,
+.page-node-270 .header-container .navbar.container-fluid {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 /* line 1, ..\themes\mkdb_ui\less\parts\blocks.less */
 .webform-client-form-270 {
-  background: gray;
+  background: url('../images/footer.jpg') no-repeat center center;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-/* line 4, ..\themes\mkdb_ui\less\parts\blocks.less */
+/* line 7, ..\themes\mkdb_ui\less\parts\blocks.less */
 .webform-client-form-270 > div {
   padding-left: 15px;
   padding-right: 15px;
@@ -9544,10 +9616,10 @@ h1 {
     margin-left: 0;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1500px) {
   /* line 49, ..\themes\mkdb_ui\less\_mixins.less */
   .webform-client-form-270 > div {
-    width: 1370px;
+    width: 1470px;
   }
 }
 /* line 2, ..\themes\mkdb_ui\less\parts\contacts.less */
@@ -9589,10 +9661,10 @@ h1 {
     margin-left: 0;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1500px) {
   /* line 49, ..\themes\mkdb_ui\less\_mixins.less */
   .page-node-270 .field-name-field-paragraphs > .field-items {
-    width: 1370px;
+    width: 1470px;
   }
 }
 /* line 5, ..\themes\mkdb_ui\less\parts\contacts.less */
@@ -9834,6 +9906,11 @@ h1 {
     height: auto;
   }
 }
+/* line 250, ..\themes\mkdb_ui\less\parts\carousel.less */
+.carousel.scount-1 .carousel-indicators,
+.carousel.scount-1 .carousel-control {
+  display: none;
+}
 /* line 1, ..\themes\mkdb_ui\less\parts\paragraphs.less */
 .entity-paragraphs-item > .content {
   position: relative;
@@ -9842,76 +9919,23 @@ h1 {
 }
 /* line 7, ..\themes\mkdb_ui\less\parts\paragraphs.less */
 .entity-paragraphs-item {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 40px;
   padding-bottom: 40px;
   border-bottom: gray 1px solid;
 }
-@media (min-width: 768px) {
-  /* line 13, ..\build-front\bower_components\bootstrap\less\grid.less */
-  .entity-paragraphs-item {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  /* line 16, ..\build-front\bower_components\bootstrap\less\grid.less */
-  .entity-paragraphs-item {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 19, ..\build-front\bower_components\bootstrap\less\grid.less */
-  .entity-paragraphs-item {
-    width: 1170px;
-  }
-}
-/* line 108, ..\build-front\bower_components\bootstrap\less\navbar.less */
-.entity-paragraphs-item > .navbar-header,
-.entity-paragraphs-item > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-@media (min-width: 1200px) {
-  /* line 113, ..\build-front\bower_components\bootstrap\less\navbar.less */
-  .entity-paragraphs-item > .navbar-header,
-  .entity-paragraphs-item > .navbar-collapse {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-@media (min-width: 1400px) {
-  /* line 49, ..\themes\mkdb_ui\less\_mixins.less */
-  .entity-paragraphs-item {
-    width: 1370px;
-  }
-}
-/* line 14, ..\themes\mkdb_ui\less\parts\paragraphs.less */
-.entity-paragraphs-item .field {
-  margin-right: 40%;
-}
-/* line 18, ..\themes\mkdb_ui\less\parts\paragraphs.less */
-.entity-paragraphs-item .carousel-container {
-  width: 40%;
-  margin-right: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
 /* line 26, ..\themes\mkdb_ui\less\parts\paragraphs.less */
-.entity-paragraphs-item.paragraphs-item-header-slider {
+.paragraphs-item-header-slider {
   max-width: none;
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+  color: white;
   margin-bottom: 100px;
   padding-bottom: 0;
   border: none;
 }
-/* line 29, ..\themes\mkdb_ui\less\parts\paragraphs.less */
-.entity-paragraphs-item.paragraphs-item-header-slider .field {
+/* line 33, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-header-slider .field {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -9919,47 +9943,172 @@ h1 {
 }
 @media (min-width: 768px) {
   /* line 13, ..\build-front\bower_components\bootstrap\less\grid.less */
-  .entity-paragraphs-item.paragraphs-item-header-slider .field {
+  .paragraphs-item-header-slider .field {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
   /* line 16, ..\build-front\bower_components\bootstrap\less\grid.less */
-  .entity-paragraphs-item.paragraphs-item-header-slider .field {
+  .paragraphs-item-header-slider .field {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
   /* line 19, ..\build-front\bower_components\bootstrap\less\grid.less */
-  .entity-paragraphs-item.paragraphs-item-header-slider .field {
+  .paragraphs-item-header-slider .field {
     width: 1170px;
   }
 }
 /* line 108, ..\build-front\bower_components\bootstrap\less\navbar.less */
-.entity-paragraphs-item.paragraphs-item-header-slider .field > .navbar-header,
-.entity-paragraphs-item.paragraphs-item-header-slider .field > .navbar-collapse {
+.paragraphs-item-header-slider .field > .navbar-header,
+.paragraphs-item-header-slider .field > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
 @media (min-width: 1200px) {
   /* line 113, ..\build-front\bower_components\bootstrap\less\navbar.less */
-  .entity-paragraphs-item.paragraphs-item-header-slider .field > .navbar-header,
-  .entity-paragraphs-item.paragraphs-item-header-slider .field > .navbar-collapse {
+  .paragraphs-item-header-slider .field > .navbar-header,
+  .paragraphs-item-header-slider .field > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1500px) {
   /* line 49, ..\themes\mkdb_ui\less\_mixins.less */
-  .entity-paragraphs-item.paragraphs-item-header-slider .field {
-    width: 1370px;
+  .paragraphs-item-header-slider .field {
+    width: 1470px;
   }
 }
-/* line 33, ..\themes\mkdb_ui\less\parts\paragraphs.less */
-.entity-paragraphs-item.paragraphs-item-header-slider .field.field-name-field-step-photo {
+/* line 37, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-header-slider .field.field-name-field-step-photo {
   max-width: none;
   padding-left: 0;
   padding-right: 0;
   width: 100%;
   position: static;
+}
+/* line 44, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-header-slider .text-on-photo {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+}
+/* line 51, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-header-slider .text-on-photo h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 48px;
+  letter-spacing: 1.92px;
+}
+/* line 59, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-header-slider .text-on-photo > div {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 100px;
+}
+@media (min-width: 768px) {
+  /* line 13, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .paragraphs-item-header-slider .text-on-photo > div {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 16, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .paragraphs-item-header-slider .text-on-photo > div {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 19, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .paragraphs-item-header-slider .text-on-photo > div {
+    width: 1170px;
+  }
+}
+/* line 108, ..\build-front\bower_components\bootstrap\less\navbar.less */
+.paragraphs-item-header-slider .text-on-photo > div > .navbar-header,
+.paragraphs-item-header-slider .text-on-photo > div > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 1200px) {
+  /* line 113, ..\build-front\bower_components\bootstrap\less\navbar.less */
+  .paragraphs-item-header-slider .text-on-photo > div > .navbar-header,
+  .paragraphs-item-header-slider .text-on-photo > div > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1500px) {
+  /* line 49, ..\themes\mkdb_ui\less\_mixins.less */
+  .paragraphs-item-header-slider .text-on-photo > div {
+    width: 1470px;
+  }
+}
+/* line 66, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-media-teaser-with-link {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  /* line 13, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .paragraphs-item-media-teaser-with-link {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 16, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .paragraphs-item-media-teaser-with-link {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 19, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .paragraphs-item-media-teaser-with-link {
+    width: 1170px;
+  }
+}
+/* line 108, ..\build-front\bower_components\bootstrap\less\navbar.less */
+.paragraphs-item-media-teaser-with-link > .navbar-header,
+.paragraphs-item-media-teaser-with-link > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 1200px) {
+  /* line 113, ..\build-front\bower_components\bootstrap\less\navbar.less */
+  .paragraphs-item-media-teaser-with-link > .navbar-header,
+  .paragraphs-item-media-teaser-with-link > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1500px) {
+  /* line 49, ..\themes\mkdb_ui\less\_mixins.less */
+  .paragraphs-item-media-teaser-with-link {
+    width: 1470px;
+  }
+}
+/* line 69, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-media-teaser-with-link .carousel-container {
+  max-width: 500px;
+  float: left;
+  margin-right: 100px;
+}
+/* line 1, ..\themes\mkdb_ui\less\pages\common.less */
+iframe {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  /* Firefox 10+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(99%);
+  /* Chrome 19+ & Safari 6+ */
+  -webkit-backface-visibility: hidden;
+  /* Fix for transition flickering */
 }

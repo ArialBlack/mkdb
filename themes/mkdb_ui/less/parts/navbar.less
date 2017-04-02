@@ -1,0 +1,41 @@
+.header-container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: @z-navbar;
+}
+
+.logged-in {
+  .header-container {
+    position: static;
+  }
+}
+
+.navbar {
+  background: none;
+  border: none;
+  font-family: 'bebas_neue_regularregular';
+
+  .navbar-nav {
+    float: right;
+
+    > li > a {
+      color: @mkdb-white;
+    }
+
+    > .active > a,
+    > .active > a:hover,
+    > .active > a:focus {
+      background: none;
+    }
+  }
+}
+
+.logo {
+  svg {
+    width: 120px;
+    height: 60px;
+    fill: @mkdb-white;
+  }
+}

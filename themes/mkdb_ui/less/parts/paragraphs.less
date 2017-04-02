@@ -5,40 +5,70 @@
 }
 
 .entity-paragraphs-item {
-  .c();
-
   margin-bottom: 40px;
   padding-bottom: 40px;
   border-bottom: gray 1px solid;
 
   .field {
-    margin-right: 40%;
+   // margin-right: 40%;
   }
 
   .carousel-container {
-    width: 40%;
-    margin-right: 0;
-    position: absolute;
-    right: 0;
-    top: 0
+    //width: 40%;
+    //margin-right: 0;
+    //position: absolute;
+    //right: 0;
+    //top: 0
   }
+}
 
-  &.paragraphs-item-header-slider {
-    .fc();
+//ШАПКА С КАРТИНКОЙ
+.paragraphs-item-header-slider {
+   .fc();
+   color: @mkdb-white;
+   margin-bottom: 100px;
+   padding-bottom: 0;
+   border: none;
 
-    .field {
-      .c();
-      margin-right: auto;
+   .field {
+     .c();
+     margin-right: auto;
 
-      &.field-name-field-step-photo {
-        .fc();
-        width: 100%;
-        position: static;
-      }
-    }
+     &.field-name-field-step-photo {
+       .fc();
+       width: 100%;
+       position: static;
+     }
+   }
 
-    margin-bottom: 100px;
-    padding-bottom: 0;
-    border: none;
+   .text-on-photo {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     left: 0;
+     width: 100%;
+
+     h2 {
+       font-family: 'Rubik', sans-serif;
+       font-weight: 500;
+       text-transform: uppercase;
+       font-size: 48px;
+       .letter-spacing(40, 48);
+     }
+
+     > div {
+       .c();
+       padding-left: 100px;
+     }
+   }
+ }
+
+.paragraphs-item-media-teaser-with-link {
+  .c();
+
+  .carousel-container {
+    max-width: 500px;
+    float: left;
+    margin-right: 100px;
   }
 }
