@@ -19,6 +19,10 @@
   }
 }
 
+.grid-offset(@type, @colnum){
+    @{type}: 100% / 12 * @colnum;
+}
+
 .line() {
   content: '';
   display: block;
@@ -68,6 +72,7 @@
   .font-size(28);
   padding: 10px 35px;
   text-decoration: none;
+  background-color: transparent;
 
   &:hover {
    // background-color: @gg-blue;
@@ -83,4 +88,39 @@ S is the font-size in pixels
 P is the resulted value in "px" to use in CSS*/
 .letter-spacing(@x, @s) {
   letter-spacing: @x * @s / 1000 * 1px;
+}
+
+.ion() {
+  display: inline-block;
+  font-family: 'Ionicons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.more-button() {
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border: #e1e2e4 1px solid;
+  border-radius: 3px;
+  background: transparent;
+  text-decoration: none;
+
+  &:after {
+    content: '\f3d6';
+    .ion();
+    margin-left: 15px;
+  }
+
+  &:hover {
+    border-color: @mkdb-blue;
+    background-color: @mkdb-blue;
+    color: white;
+  }
 }

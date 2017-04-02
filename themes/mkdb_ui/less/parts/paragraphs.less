@@ -7,18 +7,39 @@
 .entity-paragraphs-item {
   margin-bottom: 40px;
   padding-bottom: 40px;
-  border-bottom: gray 1px solid;
+}
 
-  .field {
-   // margin-right: 40%;
+
+.paragraphs-item-media-teaser-with-link,
+.paragraphs-item-wide-media-teaser-with-link,
+.paragraphs-item-step {
+  .field-name-field-step-title-1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 40px;
+    .letter-spacing(32, 40);
+    margin-bottom: 30px;
   }
+}
 
-  .carousel-container {
-    //width: 40%;
-    //margin-right: 0;
-    //position: absolute;
-    //right: 0;
-    //top: 0
+.paragraphs-items {
+  .field-name-field-plink {
+    margin-top: 50px;
+
+    a {
+      .more-button();
+    }
+  }
+}
+
+
+.paragraphs-item-header-slider,
+.paragraphs-item-wide-media-teaser-with-link {
+  a {
+    .more-button();
+    color: white;
   }
 }
 
@@ -63,6 +84,7 @@
    }
  }
 
+//Просто блок с картинкой
 .paragraphs-item-media-teaser-with-link {
   .c();
 
@@ -70,5 +92,143 @@
     max-width: 500px;
     float: left;
     margin-right: 100px;
+  }
+
+  > .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+//Широкий блок с картинкой
+.paragraphs-item-wide-media-teaser-with-link {
+  width: 100%;
+  //padding-right: 18%;
+
+  > .content {
+    position: relative;
+
+    .text-on-photo {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      color: white;
+
+      .text-container {
+        .c();
+      }
+    }
+  }
+}
+
+//Проекты
+.paragraphs-item-project {
+  > .content {
+    .c();
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-bottom: 90px;
+    border-bottom: @mkdb-line 1px solid;
+  }
+
+  .text-container {
+    .col(6);
+    float: none;
+    @p: 20px;
+
+    .field-name-field-step-title-1 {
+      text-transform: uppercase;
+      font-size: 32px;
+      margin-bottom: @p;
+    }
+
+    p {
+      margin-bottom: @p;
+    }
+  }
+
+  .carousel-container {
+    .col(5);
+    .grid-offset(padding-left, 1);
+    float: none;
+  }
+
+  &:nth-child(even) {
+    .carousel-container {
+      order: 1;
+      .col(4);
+      padding-left: 0;
+    }
+
+    .text-container {
+      order: 2;
+      .col(7);
+      .grid-offset(padding-left, 1);
+    }
+  }
+
+  &:last-child {
+    > .conent {
+      border-bottom: none;
+    }
+  }
+}
+
+//Как это работает
+.paragraphs-item-step {
+  > .content {
+    .c();
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-bottom: 90px;
+    border-bottom: @mkdb-line 1px solid;
+  }
+
+  .text-container {
+    .col(7);
+    float: none;
+    @p: 20px;
+
+    .field-name-field-step-title-1 {
+      text-transform: uppercase;
+      font-size: 32px;
+      margin-bottom: @p;
+    }
+
+    p {
+      margin-bottom: @p;
+    }
+  }
+
+  .carousel-container {
+    .col(5);
+    .grid-offset(padding-left, 2);
+    .grid-offset(padding-right, 1);
+    float: none;
+  }
+
+  &:nth-child(odd) {
+    .carousel-container {
+      order: 2;
+      .col(6);
+      .grid-offset(padding-right, 2);
+      .grid-offset(padding-left, 2);
+    }
+
+    .text-container {
+      order: 1;
+      .col(6);
+    }
+  }
+
+  &:last-child {
+    > .conent {
+      border-bottom: none;
+    }
   }
 }
