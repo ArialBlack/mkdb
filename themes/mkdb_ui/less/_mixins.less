@@ -75,3 +75,12 @@
     //color: @on-dark;
   }
 }
+
+/*
+X * S / 1000 = P
+X is equal to the letter-tracking value in Photoshop
+S is the font-size in pixels
+P is the resulted value in "px" to use in CSS*/
+.letter-spacing(@x, @s) {
+  letter-spacing: @x * @s / 1000 * 1px;
+}
