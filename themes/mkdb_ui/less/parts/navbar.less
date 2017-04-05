@@ -1,9 +1,14 @@
 .header-container {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: @z-navbar;
+  background: #1c1d1e;
+
+  @media (min-width: @screen-lg-min) {
+    background: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: @z-navbar;
+  }
 }
 
 .logged-in {
@@ -12,24 +17,43 @@
   }
 }
 
-.navbar {
+.navbar.container {
   background: none;
   border: none;
   font-family: 'bebas_neue_regularregular';
   font-size: 18px;
   .letter-spacing(18, 60);
+  margin-top: 0;
+  margin-bottom: 0;
+
+  .navbar-toggle {
+    margin-top: 25px;
+  }
+
+  @media (min-width: @screen-lg-min) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
   .navbar-nav {
     float: right;
+    margin-top: 15px;
 
     > li > a {
       color: @mkdb-white;
+      margin-left: 20px;
+      border-bottom: transparent 1px solid;
+
+      &:hover {
+        border-color: @mkdb-white;
+      }
     }
 
     > .active > a,
     > .active > a:hover,
     > .active > a:focus {
       background: none;
+      border-color: @mkdb-white;
     }
   }
 }

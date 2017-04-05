@@ -7,7 +7,27 @@
 
   .left,
   .right {
-    .col(5);
+    @media (min-width: @screen-md-min) {
+      .col(5);
+    }
+  }
+
+  .right {
+    margin-top: 20px;
+
+    @media (min-width: @screen-md-min) {
+      margin-top: 0;
+    }
+  }
+
+  .webform-component--subtitle {
+    .col(12);
+    .rft(24, 48);
+    line-height: 140%;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    .border-left();
   }
 
   .form-actions {

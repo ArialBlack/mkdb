@@ -47,6 +47,24 @@
   line-height: ~"@{remValue}rem";
 }
 
+.rft(@mysizeValue-min, @mysizeValue-max) {
+
+  @delta: @mysizeValue-max - @mysizeValue-min;
+  @step: @delta / 3;
+
+  .font-size(@mysizeValue-min);
+
+  @media (min-width: @screen-sm-min) {
+    .font-size(@mysizeValue-max - @step * 2);
+  }
+  @media (min-width: @screen-md-min) {
+    .font-size(@mysizeValue-max - @step);
+  }
+  @media (min-width: @screen-lg-min) {
+    .font-size(@mysizeValue-max);
+  }
+}
+
 .c() {
   .container();
 
@@ -122,5 +140,15 @@ P is the resulted value in "px" to use in CSS*/
     border-color: @mkdb-blue;
     background-color: @mkdb-blue;
     color: white;
+  }
+}
+
+.border-left() {
+  @p: 25px;
+
+  @media (min-width: @screen-md-min) {
+    border-left: @mkdb-line 1px solid;
+    padding-left: @p;
+    margin-left: -1 * @p;
   }
 }
