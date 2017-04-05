@@ -38,3 +38,154 @@
   }
 }
 
+//dots and lines
+@media (min-width: @screen-md-min) {
+  .front {
+    .paragraphs-items {
+      position: relative;
+
+      &:before {
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: @mkdb-line;
+        position: absolute;
+        top: 100px;
+        left: 23%;
+        z-index: -1;
+      }
+    }
+
+    #section-1 {
+      .content {
+        &:after {
+          .dots();
+          left: -110px;
+          background: url('../images/dots-left-1.png') no-repeat center center;
+        }
+      }
+    }
+
+    #section-2 {
+      .content {
+        &:after {
+          .dots();
+          right: -110px;
+          background: url('../images/dots-right-2.png') no-repeat center center;
+        }
+      }
+    }
+
+    #section-3 {
+      .content {
+        &:after {
+          .dots();
+          left: -110px;
+          background: url('../images/dots-left-3.png') no-repeat center center;
+        }
+      }
+    }
+  }
+
+  //about
+  .page-node-272 {
+    .paragraphs-items {
+      position: relative;
+
+      &:before {
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: @mkdb-line;
+        position: absolute;
+        top: 100px;
+        left: 23%;
+        z-index: -1;
+      }
+    }
+    
+    #section-1 {
+      .content {
+        &:after {
+          .dots();
+          left: -110px;
+          background: url('../images/dots-left-1.png') no-repeat center center;
+        }
+      }
+    }
+
+    #section-2 {
+      .content {
+        &:after {
+          .dots();
+          right: -110px;
+          background: url('../images/dots-right-2.png') no-repeat center center;
+        }
+      }
+    }
+
+    #section-3 {
+      .content {
+        &:after {
+          .dots();
+          left: -110px;
+          background: url('../images/dots-left-3.png') no-repeat center center;
+        }
+      }
+    }
+
+    #section-4 {
+      .content {
+        &:after {
+          .dots();
+          right: -110px;
+          background: url('../images/dots-right-4.png') no-repeat center center;
+        }
+      }
+    }
+
+    .webform-client-form-270 {
+      .right {
+        &:after {
+          .dots();
+          right: -110px;
+          background: url('../images/dots-right-5.png') no-repeat center center;
+        }
+      }
+    }
+  }
+  //как это работает
+  .page-node-269 {
+    #section-1 {
+      .content {
+        &:after {
+          .dots();
+          left: -110px;
+          background: url('../images/dots-left-1.png') no-repeat center center;
+        }
+      }
+    }
+
+    #section-2 {
+      .content {
+        &:after {
+          .dots();
+          right: -110px;
+          background: url('../images/dots-right-2.png') no-repeat center center;
+        }
+      }
+    }
+
+    #section-3 {
+      .content {
+        &:after {
+          .dots();
+          left: -110px;
+          background: url('../images/dots-left-3.png') no-repeat center center;
+        }
+      }
+    }
+  }
+}
+
+

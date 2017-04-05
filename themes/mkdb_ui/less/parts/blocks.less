@@ -17,6 +17,13 @@
 
     @media (min-width: @screen-md-min) {
       margin-top: 0;
+      position: relative;
+
+      &:after {
+        .dots();
+        right: -110px;
+        background: url('../images/dots-right-4.png') no-repeat center center;
+      }
     }
   }
 
