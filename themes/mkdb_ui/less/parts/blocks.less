@@ -3,6 +3,48 @@
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 100px;
+  color: white;
+
+  .left,
+  .right {
+    @media (min-width: @screen-md-min) {
+      .col(5);
+    }
+  }
+
+  .right {
+    margin-top: 20px;
+
+    @media (min-width: @screen-md-min) {
+      margin-top: 0;
+      position: relative;
+
+      &:after {
+        .dots();
+        right: -110px;
+        background: url('../images/dots-right-4.png') no-repeat center center;
+      }
+    }
+  }
+
+  .webform-component--subtitle {
+    .col(12);
+    .rft(24, 48);
+    line-height: 140%;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    .border-left();
+  }
+
+  .form-actions {
+    .col(12);
+    margin-top: 40px;
+
+    button {
+      .more-button();
+    }
+  }
 
   > div {
     .c();

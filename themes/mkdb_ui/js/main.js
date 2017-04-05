@@ -9,6 +9,24 @@
             });
         }
 
+        function calcSizes() {
+            var ww = $(window).width();
+            if (ww >=992) {
+                var $containerMargin = parseInt(jQuery('#navbar').css('margin-left'), 10);
+                $('.paragraphs-item-wide-media-teaser-with-link .content').css('width', ww - $containerMargin + 'px');
+            } else {
+                $('.paragraphs-item-wide-media-teaser-with-link .content').css('width', '100%');
+            }
+        }
+
+        function numParagraphs() {
+            var $par = $('.entity-paragraphs-item');
+
+            $par.each(function(index){
+                $(this).attr('id', 'section-' + index);
+            });
+        }
+
         function buildMultyCarousel() {
             // Instantiate the Bootstrap carousel
 
@@ -31,12 +49,27 @@
 
         $(document).ready(function() {
             $('.carousel').carousel();
+            calcSizes();
+            numParagraphs();
             //buildMultyCarousel();
+
+            $(".sscroll").click(function(event) {
+                event.preventDefault();
+
+                var id = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(id).offset().top
+                }, 1000);
+            });
         });
 
         $(window).load(function() {
            // buildMasonry();
         });
 
-    }); // end of document ready
+        $(window).resize(function () {
+            calcSizes();
+        });
+
+        }); // end of document ready
 })(jQuery); // end of jQuery name space

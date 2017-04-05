@@ -1,0 +1,191 @@
+.page-node-270 {
+  iframe {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
+    -webkit-backface-visibility: hidden;  /* Fix for transition flickering */
+  }
+
+  .paragraphs-item-paragraphs-pack-content {
+    .col(3);
+  }
+
+  .paragraphs-item-embed-script {
+    .col(9);
+    .grid-offset(padding-left, 1);
+
+    .field-name-field-script {
+      > .field-items > .field-item {
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 999;
+          background: url('../images/map.png') no-repeat center center;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+  #block-system-main {
+    padding-top: 80px;
+  }
+}
+
+//dots and lines
+@media (min-width: @screen-md-min) {
+  .front {
+    .paragraphs-items {
+      position: relative;
+
+      &:before {
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: @mkdb-line;
+        position: absolute;
+        top: 100px;
+        left: 23%;
+        z-index: -1;
+      }
+    }
+
+    #section-1 {
+      .content {
+        &:after {
+          .dots();
+          left: -110px;
+          background: url('../images/dots-left-1.png') no-repeat center center;
+        }
+      }
+    }
+
+    #section-2 {
+      .content {
+        &:after {
+          .dots();
+          right: -110px;
+          background: url('../images/dots-right-2.png') no-repeat center center;
+        }
+      }
+    }
+
+    #section-3 {
+      .content {
+        &:after {
+          .dots();
+          left: -110px;
+          background: url('../images/dots-left-3.png') no-repeat center center;
+        }
+      }
+    }
+  }
+
+  //about
+  .page-node-272 {
+    .paragraphs-items {
+      position: relative;
+
+      &:before {
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: @mkdb-line;
+        position: absolute;
+        top: 100px;
+        left: 23%;
+        z-index: -1;
+      }
+    }
+    
+    #section-1 {
+      .content {
+        &:after {
+          .dots();
+          left: -110px;
+          background: url('../images/dots-left-1.png') no-repeat center center;
+        }
+      }
+    }
+
+    #section-2 {
+      .content {
+        &:after {
+          .dots();
+          right: -110px;
+          background: url('../images/dots-right-2.png') no-repeat center center;
+        }
+      }
+    }
+
+    #section-3 {
+      .content {
+        &:after {
+          .dots();
+          left: -110px;
+          background: url('../images/dots-left-3.png') no-repeat center center;
+        }
+      }
+    }
+
+    #section-4 {
+      .content {
+        &:after {
+          .dots();
+          right: -110px;
+          background: url('../images/dots-right-4.png') no-repeat center center;
+        }
+      }
+    }
+
+    .webform-client-form-270 {
+      .right {
+        &:after {
+          .dots();
+          right: -110px;
+          background: url('../images/dots-right-5.png') no-repeat center center;
+        }
+      }
+    }
+  }
+  //как это работает
+  .page-node-269 {
+    #section-1 {
+      .content {
+        &:after {
+          .dots();
+          left: -110px;
+          background: url('../images/dots-left-1.png') no-repeat center center;
+        }
+      }
+    }
+
+    #section-2 {
+      .content {
+        &:after {
+          .dots();
+          right: -110px;
+          background: url('../images/dots-right-2.png') no-repeat center center;
+        }
+      }
+    }
+
+    #section-3 {
+      .content {
+        &:after {
+          .dots();
+          left: -110px;
+          background: url('../images/dots-left-3.png') no-repeat center center;
+        }
+      }
+    }
+  }
+}
+
+

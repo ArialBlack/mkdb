@@ -9,3 +9,30 @@
     margin-bottom: 0;
   }
 }
+
+.footer-container {
+  padding-top: 10px;
+
+  .navbar-header {
+    float: left;
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+
+    @media (min-width: @screen-lg-min) {
+      float: right;
+    }
+
+    ul {
+      margin-top: 0;
+
+      li {
+        float: left;
+      }
+    }
+  }
+}

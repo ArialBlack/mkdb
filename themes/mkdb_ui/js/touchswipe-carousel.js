@@ -2,11 +2,11 @@
   $(function() {
 
     function center_full_project_buttons(){
-      console.log('script pashet nakonecta!!');
+      //console.log('script pashet nakonecta!!');
       if(window.innerWidth > 769){
         $('.view-slider-portfolio .item-list ul').css('width',$('.view-slider-portfolio .item-list ul li').length*(window.innerWidth/3)+'px');
         $('.view-slider-portfolio .item-list ul li').css('width',(window.innerWidth/3)+'px');
-        console.log('script pashet!!');
+        //console.log('script pashet!!');
       }else{
         $('.view-slider-portfolio .item-list ul').css('width',$('.view-slider-portfolio .item-list ul li').length*(window.innerWidth*0.8)+'px');
         $('.view-slider-portfolio .item-list ul li').css('width',(window.innerWidth*0.8)+'px');
@@ -32,7 +32,7 @@
 
       $(".colorbox-load").click(function(e) {
         e.preventDefault;
-        console.log("video pashet tozhe!");
+        //console.log("video pashet tozhe!");
       });
 
       $('.fi-arrow-previous').click(function(){

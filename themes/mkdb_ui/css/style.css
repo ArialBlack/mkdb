@@ -7761,7 +7761,13 @@ button.close {
 .paragraphs-item-header-slider .text-on-photo > div:before,
 .paragraphs-item-header-slider .text-on-photo > div:after,
 .paragraphs-item-media-teaser-with-link:before,
-.paragraphs-item-media-teaser-with-link:after {
+.paragraphs-item-media-teaser-with-link:after,
+.paragraphs-item-wide-media-teaser-with-link > .content .text-on-photo .text-container:before,
+.paragraphs-item-wide-media-teaser-with-link > .content .text-on-photo .text-container:after,
+.paragraphs-item-project > .content:before,
+.paragraphs-item-project > .content:after,
+.paragraphs-item-step > .content:before,
+.paragraphs-item-step > .content:after {
   content: " ";
   display: table;
 }
@@ -7786,7 +7792,10 @@ button.close {
 .page-node-270 .field-name-field-paragraphs > .field-items:after,
 .paragraphs-item-header-slider .field:after,
 .paragraphs-item-header-slider .text-on-photo > div:after,
-.paragraphs-item-media-teaser-with-link:after {
+.paragraphs-item-media-teaser-with-link:after,
+.paragraphs-item-wide-media-teaser-with-link > .content .text-on-photo .text-container:after,
+.paragraphs-item-project > .content:after,
+.paragraphs-item-step > .content:after {
   clear: both;
 }
 /* line 12, ..\build-front\bower_components\bootstrap\less\utilities.less */
@@ -9048,7 +9057,7 @@ body.navbar-tray-open.navbar-vertical.navbar-fixed {
 .dropdown-submenu > a:after {
   border-left-color: white;
 }
-/* line 56, ..\themes\mkdb_ui\less\_mixins.less */
+/* line 60, ..\themes\mkdb_ui\less\_mixins.less */
 .fc {
   max-width: none;
   width: 100%;
@@ -9135,26 +9144,31 @@ h6 {
 /* line 69, ..\themes\mkdb_ui\less\_base.less */
 a {
   transition: 0.3s all linear;
+  font-family: 'bebas_neue_regularregular';
+  font-size: 18px;
+  letter-spacing: 1.08px;
+  color: #0b00c0;
+  text-decoration: none;
 }
-/* line 73, ..\themes\mkdb_ui\less\_base.less */
+/* line 78, ..\themes\mkdb_ui\less\_base.less */
 p {
   margin-bottom: 40px;
 }
-/* line 77, ..\themes\mkdb_ui\less\_base.less */
+/* line 82, ..\themes\mkdb_ui\less\_base.less */
 img {
   max-width: 100%;
   height: auto;
 }
-/* line 82, ..\themes\mkdb_ui\less\_base.less */
+/* line 87, ..\themes\mkdb_ui\less\_base.less */
 .translation_en,
 .translation_uk {
   display: none !important;
 }
-/* line 87, ..\themes\mkdb_ui\less\_base.less */
+/* line 92, ..\themes\mkdb_ui\less\_base.less */
 h1.page-header {
   border: none;
 }
-/* line 93, ..\themes\mkdb_ui\less\_base.less */
+/* line 98, ..\themes\mkdb_ui\less\_base.less */
 .pager.pager-load-more a {
   border: #231f20 1px solid;
   border-radius: 0;
@@ -9165,28 +9179,29 @@ h1.page-header {
   font-size: 1.1666666666666667rem;
   padding: 10px 35px;
   text-decoration: none;
+  background-color: transparent;
 }
-/* line 99, ..\themes\mkdb_ui\less\_base.less */
+/* line 104, ..\themes\mkdb_ui\less\_base.less */
 .region-content ul.flippy {
   margin-top: 60px;
 }
-/* line 105, ..\themes\mkdb_ui\less\_base.less */
+/* line 110, ..\themes\mkdb_ui\less\_base.less */
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
 }
-/* line 109, ..\themes\mkdb_ui\less\_base.less */
+/* line 114, ..\themes\mkdb_ui\less\_base.less */
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   opacity: 0;
 }
-/* line 115, ..\themes\mkdb_ui\less\_base.less */
+/* line 120, ..\themes\mkdb_ui\less\_base.less */
 .carousel-fade .carousel-inner .active,
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1;
 }
-/* line 121, ..\themes\mkdb_ui\less\_base.less */
+/* line 126, ..\themes\mkdb_ui\less\_base.less */
 .carousel-fade .carousel-inner .next,
 .carousel-fade .carousel-inner .prev,
 .carousel-fade .carousel-inner .active.left,
@@ -9195,11 +9210,11 @@ h1.page-header {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
-/* line 130, ..\themes\mkdb_ui\less\_base.less */
+/* line 135, ..\themes\mkdb_ui\less\_base.less */
 .carousel-fade .carousel-control {
   z-index: 2;
 }
-/* line 135, ..\themes\mkdb_ui\less\_base.less */
+/* line 140, ..\themes\mkdb_ui\less\_base.less */
 html,
 body,
 .carousel,
@@ -9207,22 +9222,22 @@ body,
 .carousel-inner .item {
   height: 100%;
 }
-/* line 151, ..\themes\mkdb_ui\less\_base.less */
+/* line 156, ..\themes\mkdb_ui\less\_base.less */
 .views-field-created {
   font-size: 5.833333333333334px !important;
   font-size: 0.5833333333333334rem !important;
 }
-/* line 155, ..\themes\mkdb_ui\less\_base.less */
+/* line 160, ..\themes\mkdb_ui\less\_base.less */
 .submitted-by {
   font-size: 7.5px !important;
   font-size: 0.75rem !important;
 }
-/* line 160, ..\themes\mkdb_ui\less\_base.less */
+/* line 165, ..\themes\mkdb_ui\less\_base.less */
 .node .translation_ru,
 .node .translation_eng {
   display: none !important;
 }
-/* line 166, ..\themes\mkdb_ui\less\_base.less */
+/* line 171, ..\themes\mkdb_ui\less\_base.less */
 h1 {
   display: none;
 }
@@ -9535,22 +9550,24 @@ h1 {
   background: none;
   border: none;
   font-family: 'bebas_neue_regularregular';
+  font-size: 18px;
+  letter-spacing: 1.08px;
 }
-/* line 20, ..\themes\mkdb_ui\less\parts\navbar.less */
+/* line 22, ..\themes\mkdb_ui\less\parts\navbar.less */
 .navbar .navbar-nav {
   float: right;
 }
-/* line 23, ..\themes\mkdb_ui\less\parts\navbar.less */
+/* line 25, ..\themes\mkdb_ui\less\parts\navbar.less */
 .navbar .navbar-nav > li > a {
   color: white;
 }
-/* line 27, ..\themes\mkdb_ui\less\parts\navbar.less */
+/* line 29, ..\themes\mkdb_ui\less\parts\navbar.less */
 .navbar .navbar-nav > .active > a,
 .navbar .navbar-nav > .active > a:hover,
 .navbar .navbar-nav > .active > a:focus {
   background: none;
 }
-/* line 36, ..\themes\mkdb_ui\less\parts\navbar.less */
+/* line 38, ..\themes\mkdb_ui\less\parts\navbar.less */
 .logo svg {
   width: 120px;
   height: 60px;
@@ -9576,8 +9593,84 @@ h1 {
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 100px;
+  color: white;
 }
-/* line 7, ..\themes\mkdb_ui\less\parts\blocks.less */
+/* line 8, ..\themes\mkdb_ui\less\parts\blocks.less */
+.webform-client-form-270 .left,
+.webform-client-form-270 .right {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  width: 41.66666667%;
+}
+/* line 17, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.webform-client-form-270 .left .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12,
+.webform-client-form-270 .right .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 39, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.webform-client-form-270 .left .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12,
+.webform-client-form-270 .right .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+/* line 13, ..\themes\mkdb_ui\less\parts\blocks.less */
+.webform-client-form-270 .form-actions {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+}
+/* line 17, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.webform-client-form-270 .form-actions .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 39, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.webform-client-form-270 .form-actions .col-xs-12 {
+  float: left;
+}
+/* line 17, ..\themes\mkdb_ui\less\parts\blocks.less */
+.webform-client-form-270 .form-actions button {
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border: #e1e2e4 1px solid;
+  border-radius: 3px;
+  background: transparent;
+  text-decoration: none;
+}
+/* line 115, ..\themes\mkdb_ui\less\_mixins.less */
+.webform-client-form-270 .form-actions button:after {
+  content: '\f3d6';
+  display: inline-block;
+  font-family: 'Ionicons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 15px;
+}
+/* line 121, ..\themes\mkdb_ui\less\_mixins.less */
+.webform-client-form-270 .form-actions button:hover {
+  border-color: #0b00c0;
+  background-color: #0b00c0;
+  color: white;
+}
+/* line 22, ..\themes\mkdb_ui\less\parts\blocks.less */
 .webform-client-form-270 > div {
   padding-left: 15px;
   padding-right: 15px;
@@ -9617,7 +9710,7 @@ h1 {
   }
 }
 @media (min-width: 1500px) {
-  /* line 49, ..\themes\mkdb_ui\less\_mixins.less */
+  /* line 53, ..\themes\mkdb_ui\less\_mixins.less */
   .webform-client-form-270 > div {
     width: 1470px;
   }
@@ -9662,7 +9755,7 @@ h1 {
   }
 }
 @media (min-width: 1500px) {
-  /* line 49, ..\themes\mkdb_ui\less\_mixins.less */
+  /* line 53, ..\themes\mkdb_ui\less\_mixins.less */
   .page-node-270 .field-name-field-paragraphs > .field-items {
     width: 1470px;
   }
@@ -9921,9 +10014,90 @@ h1 {
 .entity-paragraphs-item {
   margin-bottom: 40px;
   padding-bottom: 40px;
-  border-bottom: gray 1px solid;
 }
-/* line 26, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+/* line 16, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-media-teaser-with-link .field-name-field-step-title-1,
+.paragraphs-item-wide-media-teaser-with-link .field-name-field-step-title-1,
+.paragraphs-item-step .field-name-field-step-title-1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 1.28px;
+  margin-bottom: 30px;
+}
+/* line 28, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-items .field-name-field-plink {
+  margin-top: 50px;
+}
+/* line 31, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-items .field-name-field-plink a {
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border: #e1e2e4 1px solid;
+  border-radius: 3px;
+  background: transparent;
+  text-decoration: none;
+}
+/* line 115, ..\themes\mkdb_ui\less\_mixins.less */
+.paragraphs-items .field-name-field-plink a:after {
+  content: '\f3d6';
+  display: inline-block;
+  font-family: 'Ionicons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 15px;
+}
+/* line 121, ..\themes\mkdb_ui\less\_mixins.less */
+.paragraphs-items .field-name-field-plink a:hover {
+  border-color: #0b00c0;
+  background-color: #0b00c0;
+  color: white;
+}
+/* line 40, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-header-slider a,
+.paragraphs-item-wide-media-teaser-with-link a {
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border: #e1e2e4 1px solid;
+  border-radius: 3px;
+  background: transparent;
+  text-decoration: none;
+  color: white;
+}
+/* line 115, ..\themes\mkdb_ui\less\_mixins.less */
+.paragraphs-item-header-slider a:after,
+.paragraphs-item-wide-media-teaser-with-link a:after {
+  content: '\f3d6';
+  display: inline-block;
+  font-family: 'Ionicons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 15px;
+}
+/* line 121, ..\themes\mkdb_ui\less\_mixins.less */
+.paragraphs-item-header-slider a:hover,
+.paragraphs-item-wide-media-teaser-with-link a:hover {
+  border-color: #0b00c0;
+  background-color: #0b00c0;
+  color: white;
+}
+/* line 47, ..\themes\mkdb_ui\less\parts\paragraphs.less */
 .paragraphs-item-header-slider {
   max-width: none;
   width: 100%;
@@ -9934,7 +10108,7 @@ h1 {
   padding-bottom: 0;
   border: none;
 }
-/* line 33, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+/* line 54, ..\themes\mkdb_ui\less\parts\paragraphs.less */
 .paragraphs-item-header-slider .field {
   padding-left: 15px;
   padding-right: 15px;
@@ -9974,12 +10148,12 @@ h1 {
   }
 }
 @media (min-width: 1500px) {
-  /* line 49, ..\themes\mkdb_ui\less\_mixins.less */
+  /* line 53, ..\themes\mkdb_ui\less\_mixins.less */
   .paragraphs-item-header-slider .field {
     width: 1470px;
   }
 }
-/* line 37, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+/* line 58, ..\themes\mkdb_ui\less\parts\paragraphs.less */
 .paragraphs-item-header-slider .field.field-name-field-step-photo {
   max-width: none;
   padding-left: 0;
@@ -9987,7 +10161,7 @@ h1 {
   width: 100%;
   position: static;
 }
-/* line 44, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+/* line 65, ..\themes\mkdb_ui\less\parts\paragraphs.less */
 .paragraphs-item-header-slider .text-on-photo {
   position: absolute;
   top: 50%;
@@ -9996,7 +10170,7 @@ h1 {
   left: 0;
   width: 100%;
 }
-/* line 51, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+/* line 72, ..\themes\mkdb_ui\less\parts\paragraphs.less */
 .paragraphs-item-header-slider .text-on-photo h2 {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
@@ -10004,7 +10178,7 @@ h1 {
   font-size: 48px;
   letter-spacing: 1.92px;
 }
-/* line 59, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+/* line 80, ..\themes\mkdb_ui\less\parts\paragraphs.less */
 .paragraphs-item-header-slider .text-on-photo > div {
   padding-left: 15px;
   padding-right: 15px;
@@ -10045,12 +10219,12 @@ h1 {
   }
 }
 @media (min-width: 1500px) {
-  /* line 49, ..\themes\mkdb_ui\less\_mixins.less */
+  /* line 53, ..\themes\mkdb_ui\less\_mixins.less */
   .paragraphs-item-header-slider .text-on-photo > div {
     width: 1470px;
   }
 }
-/* line 66, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+/* line 88, ..\themes\mkdb_ui\less\parts\paragraphs.less */
 .paragraphs-item-media-teaser-with-link {
   padding-left: 15px;
   padding-right: 15px;
@@ -10090,19 +10264,413 @@ h1 {
   }
 }
 @media (min-width: 1500px) {
-  /* line 49, ..\themes\mkdb_ui\less\_mixins.less */
+  /* line 53, ..\themes\mkdb_ui\less\_mixins.less */
   .paragraphs-item-media-teaser-with-link {
     width: 1470px;
   }
 }
-/* line 69, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+/* line 91, ..\themes\mkdb_ui\less\parts\paragraphs.less */
 .paragraphs-item-media-teaser-with-link .carousel-container {
   max-width: 500px;
   float: left;
   margin-right: 100px;
 }
-/* line 1, ..\themes\mkdb_ui\less\pages\common.less */
-iframe {
+/* line 97, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-media-teaser-with-link > .content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/* line 105, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-wide-media-teaser-with-link {
+  width: 100%;
+}
+/* line 109, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-wide-media-teaser-with-link > .content {
+  position: relative;
+}
+/* line 112, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-wide-media-teaser-with-link > .content .text-on-photo {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  color: white;
+}
+/* line 120, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-wide-media-teaser-with-link > .content .text-on-photo .text-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  /* line 13, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .paragraphs-item-wide-media-teaser-with-link > .content .text-on-photo .text-container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 16, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .paragraphs-item-wide-media-teaser-with-link > .content .text-on-photo .text-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 19, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .paragraphs-item-wide-media-teaser-with-link > .content .text-on-photo .text-container {
+    width: 1170px;
+  }
+}
+/* line 108, ..\build-front\bower_components\bootstrap\less\navbar.less */
+.paragraphs-item-wide-media-teaser-with-link > .content .text-on-photo .text-container > .navbar-header,
+.paragraphs-item-wide-media-teaser-with-link > .content .text-on-photo .text-container > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 1200px) {
+  /* line 113, ..\build-front\bower_components\bootstrap\less\navbar.less */
+  .paragraphs-item-wide-media-teaser-with-link > .content .text-on-photo .text-container > .navbar-header,
+  .paragraphs-item-wide-media-teaser-with-link > .content .text-on-photo .text-container > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1500px) {
+  /* line 53, ..\themes\mkdb_ui\less\_mixins.less */
+  .paragraphs-item-wide-media-teaser-with-link > .content .text-on-photo .text-container {
+    width: 1470px;
+  }
+}
+/* line 129, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-project > .content {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  padding-bottom: 90px;
+  border-bottom: #d0d1d1 1px solid;
+}
+@media (min-width: 768px) {
+  /* line 13, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .paragraphs-item-project > .content {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 16, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .paragraphs-item-project > .content {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 19, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .paragraphs-item-project > .content {
+    width: 1170px;
+  }
+}
+/* line 108, ..\build-front\bower_components\bootstrap\less\navbar.less */
+.paragraphs-item-project > .content > .navbar-header,
+.paragraphs-item-project > .content > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 1200px) {
+  /* line 113, ..\build-front\bower_components\bootstrap\less\navbar.less */
+  .paragraphs-item-project > .content > .navbar-header,
+  .paragraphs-item-project > .content > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1500px) {
+  /* line 53, ..\themes\mkdb_ui\less\_mixins.less */
+  .paragraphs-item-project > .content {
+    width: 1470px;
+  }
+}
+/* line 138, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-project .text-container {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  width: 50%;
+  float: none;
+}
+/* line 17, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.paragraphs-item-project .text-container .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 39, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.paragraphs-item-project .text-container .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+/* line 143, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-project .text-container .field-name-field-step-title-1 {
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+/* line 149, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-project .text-container p {
+  margin-bottom: 20px;
+}
+/* line 154, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-project .carousel-container {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  width: 41.66666667%;
+  padding-left: 8.33333333%;
+  float: none;
+}
+/* line 17, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.paragraphs-item-project .carousel-container .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 39, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.paragraphs-item-project .carousel-container .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+/* line 161, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-project:nth-child(even) .carousel-container {
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  width: 33.33333333%;
+  padding-left: 0;
+}
+/* line 17, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.paragraphs-item-project:nth-child(even) .carousel-container .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 39, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.paragraphs-item-project:nth-child(even) .carousel-container .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+/* line 167, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-project:nth-child(even) .text-container {
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  width: 58.33333333%;
+  padding-left: 8.33333333%;
+}
+/* line 17, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.paragraphs-item-project:nth-child(even) .text-container .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 39, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.paragraphs-item-project:nth-child(even) .text-container .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+/* line 175, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-project:last-child > .conent {
+  border-bottom: none;
+}
+/* line 183, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-step > .content {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  padding-bottom: 90px;
+  border-bottom: #d0d1d1 1px solid;
+}
+@media (min-width: 768px) {
+  /* line 13, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .paragraphs-item-step > .content {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 16, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .paragraphs-item-step > .content {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 19, ..\build-front\bower_components\bootstrap\less\grid.less */
+  .paragraphs-item-step > .content {
+    width: 1170px;
+  }
+}
+/* line 108, ..\build-front\bower_components\bootstrap\less\navbar.less */
+.paragraphs-item-step > .content > .navbar-header,
+.paragraphs-item-step > .content > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 1200px) {
+  /* line 113, ..\build-front\bower_components\bootstrap\less\navbar.less */
+  .paragraphs-item-step > .content > .navbar-header,
+  .paragraphs-item-step > .content > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (min-width: 1500px) {
+  /* line 53, ..\themes\mkdb_ui\less\_mixins.less */
+  .paragraphs-item-step > .content {
+    width: 1470px;
+  }
+}
+/* line 192, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-step .text-container {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  width: 58.33333333%;
+  float: none;
+}
+/* line 17, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.paragraphs-item-step .text-container .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 39, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.paragraphs-item-step .text-container .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+/* line 197, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-step .text-container .field-name-field-step-title-1 {
+  text-transform: uppercase;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+/* line 203, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-step .text-container p {
+  margin-bottom: 20px;
+}
+/* line 208, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-step .carousel-container {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  width: 41.66666667%;
+  padding-left: 16.66666667%;
+  padding-right: 8.33333333%;
+  float: none;
+}
+/* line 17, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.paragraphs-item-step .carousel-container .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 39, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.paragraphs-item-step .carousel-container .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+/* line 216, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-step:nth-child(odd) .carousel-container {
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  width: 50%;
+  padding-right: 16.66666667%;
+  padding-left: 16.66666667%;
+}
+/* line 17, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.paragraphs-item-step:nth-child(odd) .carousel-container .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 39, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.paragraphs-item-step:nth-child(odd) .carousel-container .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+/* line 223, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-step:nth-child(odd) .text-container {
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  width: 50%;
+}
+/* line 17, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.paragraphs-item-step:nth-child(odd) .text-container .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 39, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.paragraphs-item-step:nth-child(odd) .text-container .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+/* line 230, ..\themes\mkdb_ui\less\parts\paragraphs.less */
+.paragraphs-item-step:last-child > .conent {
+  border-bottom: none;
+}
+/* line 2, ..\themes\mkdb_ui\less\pages\pages.less */
+.page-node-270 iframe {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
   /* Firefox 10+ */
   filter: gray;
@@ -10111,4 +10679,65 @@ iframe {
   /* Chrome 19+ & Safari 6+ */
   -webkit-backface-visibility: hidden;
   /* Fix for transition flickering */
+}
+/* line 9, ..\themes\mkdb_ui\less\pages\pages.less */
+.page-node-270 .paragraphs-item-paragraphs-pack-content {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  width: 25%;
+}
+/* line 17, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.page-node-270 .paragraphs-item-paragraphs-pack-content .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 39, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.page-node-270 .paragraphs-item-paragraphs-pack-content .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+/* line 13, ..\themes\mkdb_ui\less\pages\pages.less */
+.page-node-270 .paragraphs-item-embed-script {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  width: 75%;
+  padding-left: 8.33333333%;
+}
+/* line 17, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.page-node-270 .paragraphs-item-embed-script .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 39, ..\build-front\bower_components\bootstrap\less\mixins\grid-framework.less */
+.page-node-270 .paragraphs-item-embed-script .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+/* line 18, ..\themes\mkdb_ui\less\pages\pages.less */
+.page-node-270 .paragraphs-item-embed-script .field-name-field-script > .field-items > .field-item {
+  position: relative;
+}
+/* line 21, ..\themes\mkdb_ui\less\pages\pages.less */
+.page-node-270 .paragraphs-item-embed-script .field-name-field-script > .field-items > .field-item:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: url('../images/map.png') no-repeat center center;
+  background-size: cover;
+}
+/* line 36, ..\themes\mkdb_ui\less\pages\pages.less */
+.page-node-270 #block-system-main {
+  padding-top: 80px;
 }
