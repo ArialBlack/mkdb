@@ -29,7 +29,7 @@ $gal_id = generateRandomString();
 $sc = count($slides);
 ?>
 <div class="carousel-container">
-<div id="bootstrapimagefieldgallery_<?php print $gal_id; ?>" class="bootstrapimagefieldgallery carousel slide scount-<?php print $sc; ?>"" data-ride="carousel" data-interval="false">
+<div id="bootstrapimagefieldgallery_<?php print $gal_id; ?>" class="bootstrapimagefieldgallery carousel slide scount-<?php print $sc; ?>"" data-ride="carousel">
       <!-- Indicators -->
     <ol class="carousel-indicators">
         <?php foreach ($slides as $id => $data): ?>
